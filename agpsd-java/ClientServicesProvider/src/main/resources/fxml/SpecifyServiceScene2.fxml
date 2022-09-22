@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="251.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.project.agpsd.ui.SpecifyServiceScene2UI">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="425.0" minWidth="10.0" prefWidth="320.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="243.0" minWidth="10.0" prefWidth="65.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Predetermined Duration (hours)" />
+            <TextField fx:id="txtField" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" />
+         </children>
+         <padding>
+            <Insets right="100.0" />
+         </padding>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnNext" mnemonicParsing="false" onAction="#clickBtnNext" text="Next" />
+            <Button fx:id="btnReturn" mnemonicParsing="false" onAction="#clickBtnReturn" text="Return" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#clickBtnCancel" text="Cancel" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.project.agpsd.controller.ControllerServiceProvider">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <center>
+            <GridPane alignment="CENTER" hgap="20.0" vgap="20.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.0" minWidth="10.0" prefWidth="163.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="357.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <BorderPane.margin>
+                  <Insets bottom="100.0" left="50.0" right="30.0" top="100.0" />
+               </BorderPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="221.0" text="UC9" />
+                  <Button mnemonicParsing="false" prefHeight="105.0" prefWidth="236.0" text="UC12" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="221.0" text="UC13" GridPane.rowIndex="2" />
+                  <Label text="Indicate Daily Availability" GridPane.columnIndex="1" />
+                  <Label text="Consult Service Execution Orders" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Report Service Completion and Evaluation" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <Label prefHeight="66.0" prefWidth="184.0" text="Service Provider Menu" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <GridPane hgap="30.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="372.0" minWidth="10.0" prefWidth="196.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="413.0" minWidth="10.0" prefWidth="404.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="244.0" text="Logoff" onAction="#handleButtonLogoff" />
+                  <Label text="Return to main menu" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.project.agpsd.ui.SpecifyServiceScene3UI">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="82.0" prefWidth="600.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnConfirm" mnemonicParsing="false" onAction="#clickBtnConfirm" text="Confirm" />
+            <Button fx:id="btnReturn" mnemonicParsing="false" onAction="#clickBtnReturn" text="Return" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#clickBtnCancel" text="Cancel" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Label fx:id="lblService" alignment="CENTER" prefHeight="238.0" prefWidth="486.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

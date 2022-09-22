@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="285.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr2.project.agpsd.ui.NewApplicationScene3UI">
+   <children>
+      <BorderPane prefHeight="285.0" prefWidth="446.0" scaleShape="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label fx:id="titleLabel" alignment="CENTER" text="New Application Menu" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+         </top>
+         <bottom>
+            <FlowPane alignment="CENTER" hgap="10.0" prefHeight="31.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#btnSubmitAction" text="Submit Application">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReturn" mnemonicParsing="false" onAction="#btnReturnAction" text="Return">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCancel" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnCancelAction" text="Cancel">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </FlowPane>
+         </bottom>
+         <center>
+            <GridPane prefHeight="162.0" prefWidth="446.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="261.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="216.0" minWidth="10.0" prefWidth="185.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnAcadQualif" mnemonicParsing="false" onAction="#btnAcadQualifAction" text="Add Academic Qualification" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="btnProfQualif" mnemonicParsing="false" onAction="#btnProfQualifAction" text="Add Professional Qualification" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="btnDoc" mnemonicParsing="false" onAction="#btnDocAction" text="Add Supporting Document" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="btnCat" mnemonicParsing="false" onAction="#btnCatAction" text="Add Category" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="cmbCategory" onAction="#cmbCategoryAction" prefHeight="35.0" prefWidth="219.0" promptText="Select a category" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtAQDesignation" onKeyPressed="#txtNumberKeyPressed" promptText="Academic Qualification Designation">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtProfQualif" onKeyPressed="#txtNumberKeyPressed" promptText="Professional Qualification" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtDoc" onKeyPressed="#txtNumberKeyPressed" promptText="Supporting Document" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtAQDegree" onKeyPressed="#txtNumberKeyPressed" promptText="Academic Qualification Degree" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtAQScore" onKeyPressed="#txtNumberKeyPressed" promptText="Academic Qualification Score" GridPane.columnIndex="1">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

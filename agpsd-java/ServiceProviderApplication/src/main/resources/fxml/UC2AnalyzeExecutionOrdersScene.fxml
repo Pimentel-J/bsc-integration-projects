@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.serviceproviderapplication.ui.UC2AnalyzeExecutionOrdersUI">
+   <top>
+      <GridPane prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Sort Execution Orders by:" />
+            <ChoiceBox fx:id="chBoxCriteria" prefHeight="26.0" prefWidth="225.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </top>
+   <center>
+      <ListView fx:id="lstViewOrders" prefHeight="221.0" prefWidth="479.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="30.0" right="30.0" />
+         </BorderPane.margin>
+      </ListView>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSort" mnemonicParsing="false" onAction="#clickBtnSort" text="Sort" />
+            <Button fx:id="btnFinish" mnemonicParsing="false" onAction="#clickBtnFinish" text="Finish" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
