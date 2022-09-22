@@ -1,0 +1,67 @@
+
+ANÁLISE DE REDE SOCIAL ORIENTADA - media
+
+
+DESCRIÇÃO DAS ENTIDADES
+=========================================================================================================================
+             ID              ENTIDADE      TIPO DE ENTIDADE                GÉNERO                                     URL
+
+            s01              NY Times                     1             Newspaper                https://www.nytimes.com/
+            s02       Washington Post                     1             Newspaper         https://www.washingtonpost.com/
+            s03   Wall Street Journal                     1             Newspaper                    https://www.wsj.com/
+            s04             USA Today                     1             Newspaper               https://www.usatoday.com/
+
+
+
+DESCRIÇÃO DOS RELACIONAMENTOS
+=============================================
+             DE           PARA           PESO
+
+            s01            s02              1
+            s01            s03              1
+            s01            s04              1
+            s02            s03              1
+            s03            s04              1
+            s03            s01              1
+            s04            s01              1
+            s04            s03              1
+
+
+
+MEDIDAS AO NÍVEL DOS NÓS
+==========================================================================
+                 ENTIDADE   GRAU ENTRADA     GRAU SAÍDA
+
+                 NY Times              3              2
+          Washington Post              1              1
+      Wall Street Journal              2              3
+                USA Today              2              2
+
+
+
+VETOR PAGE RANK OBTIDO PELO ALGORITMO PAGE RANK (E VETORES INTERMÉDIOS)
+==========================================================================
+
+damping factor = 0,850
+
+  Nº ITERAÇÕES \ NÓS              NY Times       Washington Post   Wall Street Journal             USA Today
+
+                   0                 1,000                 1,000                 1,000                 1,000
+                   1                 1,708                 0,460                 1,307                 1,264
+                   2                 1,476                 0,539                 1,337                 1,179
+                   3                 0,631                 0,230                 0,550                 0,496
+
+
+
+VETOR PAGE RANK OBTIDO PELO CÁLCULO DA CENTRALIDADE DA MATRIZ M
+==========================================================================
+                 ENTIDADE   CENTRALIDADE
+
+                 NY Times          0,632
+          Washington Post          0,228
+      Wall Street Journal          0,551
+                USA Today          0,496
+
+
+Powered by The Wizards
+Tue Jan 08 22:55:20 GMT 2019
