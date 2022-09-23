@@ -11,6 +11,7 @@
 [![Trello][Trello-badge]][Trello-url]
 [![VSCode][VSCode-badge]][VSCode-url]
 [![ISEP][ISEP-badge]][ISEP-url]
+[![ISEP-LEI][ISEP-LEI-badge]][ISEP-LEI-url]
 
 ## Table of Contents
 
@@ -41,8 +42,10 @@ Social network analysis with a simplified version of Google’s Page Rank algori
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Bitbucket-badge]: https://img.shields.io/badge/Bitbucket-0747a6?style=for-the-badge&logo=bitbucket&logoColor=white
 [Bitbucket-url]: https://bitbucket.org/
-[ISEP-badge]: https://img.shields.io/badge/-ISEP-orange.svg?style=for-the-badge&logo=Leanpub&logoColor=white
+[ISEP-badge]: https://img.shields.io/badge/ISEP-orange.svg?style=for-the-badge&logo=Leanpub&logoColor=white
 [ISEP-url]: https://www.isep.ipp.pt/
+[ISEP-LEI-badge]: https://img.shields.io/badge/LEI_BSc-gray.svg?style=for-the-badge&logo=HTMLAcademy&logoColor=white
+[ISEP-LEI-url]: https://www.isep.ipp.pt/Course/Course/26
 [NetBeans-badge]: https://img.shields.io/badge/apache%20netbeans-1B6AC6?style=for-the-badge&logo=apache%20netbeans%20IDE&logoColor=white
 [NetBeans-url]: https://netbeans.apache.org/
 [Java-badge]: https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=CoffeeScript&logoColor=white

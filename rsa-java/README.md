@@ -14,6 +14,7 @@
 [![VSCode][VSCode-badge]][VSCode-url]
 [![Visual-Paradigm][Visual-Paradigm-badge]][Visual-Paradigm-url]
 [![ISEP][ISEP-badge]][ISEP-url]
+[![ISEP-LEI][ISEP-LEI-badge]][ISEP-LEI-url]
 
 ## Table of Contents
 
@@ -57,6 +58,8 @@ Support of ridesharing businesses. From managing routes, users, bicycles, electr
 [Bitbucket-url]: https://bitbucket.org/
 [ISEP-badge]: https://img.shields.io/badge/ISEP-orange.svg?style=for-the-badge&logo=Leanpub&logoColor=white
 [ISEP-url]: https://www.isep.ipp.pt/
+[ISEP-LEI-badge]: https://img.shields.io/badge/LEI_BSc-gray.svg?style=for-the-badge&logo=HTMLAcademy&logoColor=white
+[ISEP-LEI-url]: https://www.isep.ipp.pt/Course/Course/26
 [IntelliJ-IDEA-badge]: https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white
 [IntelliJ-IDEA-url]: https://www.jetbrains.com/idea/
 [Jenkins-badge]: https://img.shields.io/badge/jenkins-D24939.svg?style=for-the-badge&logo=jenkins&logoColor=white
