@@ -44,7 +44,7 @@ Track, schedule and real-time reports of production orders and their execution. 
 
 5. [App Exported Files (*xml/xsd*)](exported_files/)
 
-> \***Note**: all Wiki files are in portuguese*
+> **Note**: all Wiki files are in portuguese
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
