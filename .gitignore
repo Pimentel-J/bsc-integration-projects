@@ -16,11 +16,10 @@
 **/*.tar
 **/*.zip
 
-# Logs and databases #
+# Logs #
 **/*.log
-**/*.sql
-**/*.sqlite
-**/# OS generated files #
+
+# OS generated files #
 **/.DS_Store
 **/.DS_Store?
 **/._*
@@ -96,7 +95,7 @@
 **/*.pdb
 
 # Kernel Module Compile Results
-**/*.mod*
+**/*.mod
 **/*.cmd
 **/.tmp_versions/
 **/modules.order
@@ -272,3 +271,37 @@
 **/Makefile.old
 **/MANIFEST.bak
 **/pm_to_blib
+
+**/*.vpp
+
+
+### .NET Core ###
+#################
+**/*.swp
+**/*.*~
+**/project.lock.json
+**/*.pyc
+
+# User-specific files
+**/*.suo
+**/*.user
+**/*.userosscache
+**/*.sln.docstates
+
+# Build results
+**/[Dd]ebug/
+**/[Dd]ebugPublic/
+**/[Rr]elease/
+**/[Rr]eleases/
+**/x64/
+**/x86/
+**/build/
+**/bld/
+**/[Bb]in/
+**/[Oo]bj/
+**/msbuild.log
+**/msbuild.err
+**/msbuild.wrn
+
+# Visual Studio 2015
+**/.vs/
