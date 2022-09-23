@@ -1,0 +1,15 @@
+
+	|   | Codigo Fabrico | Descricao Breve | Codigo Categoria |
+	
+	| 1 | 32000142 | Parafuso | CAT2 |
+	
+	| 2 | 32000150 | Bucha | CAT2 |
+	
+	| 3 | 41000651 | Armário | CAT1 |
+	
+	| 4 | 50000106 | Aspirador | CAT3 |
+	
+	| 5 | 65000106 | Cimento | CAT2 |
+	
+	| 6 | 77000651 | Cadeira | CAT1 |
+	

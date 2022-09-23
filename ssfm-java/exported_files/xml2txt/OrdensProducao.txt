@@ -1,0 +1,7 @@
+
+	|   | idOrdem | Quantidade | Estado Ordem |
+	
+	| 1 | 100003363 | 65000.0 | CONCLUIDA |
+	
+	| 2 | 100003470 | 25000.0 | CONCLUIDA |
+	

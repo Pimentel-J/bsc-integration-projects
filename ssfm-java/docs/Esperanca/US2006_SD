@@ -1,0 +1,18 @@
+title: Adicionar Novo Produto
+
+participant Gestor de Produção as gp
+participant AdicionarProdutoUI as apui
+participant AdicionarProdutoController as apc
+participant ProdutoRepository as pr
+participant Produto as p
+participant DepositoFactory as dfac
+
+gp->apui: onLoad
+gp->apui: inserir dados (...)
+gp->apui: submeter
+apui->apc: adicionarProduto(...)
+apc->apc: novoProduto(...)
+apc->p: Create()
+apc->pr: save()
+apc-->apui:
+apui->apui: mensagem sucesso

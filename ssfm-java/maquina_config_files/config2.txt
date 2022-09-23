@@ -1,0 +1,3 @@
+ENERGY(consumption mode)
+COMM.PROTOCOL(cip)
+LTC(auto)

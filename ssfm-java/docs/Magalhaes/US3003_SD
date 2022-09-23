@@ -1,0 +1,17 @@
+title: Registar Depósito
+
+participant Gestor de Chão de Fábrica as gcf
+participant DepositoForm as df
+participant RegistarDepositoController as rdc
+participant DepositoRepository as dr
+participant Depósito as d
+
+gcf->df: onLoad
+gcf->df: inserir dados (...)
+gcf->df: submeter
+df->rdc: registarDeposito(...)
+rdc->rdc: novoDeposito(...)
+rdc->d: create
+rdc->dr: save
+rdc-->df:
+df->df: mensagem sucesso

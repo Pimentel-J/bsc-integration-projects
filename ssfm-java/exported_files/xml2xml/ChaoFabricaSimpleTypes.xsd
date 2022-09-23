@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- elementFormDefault and attributeFormDefault are irrelvant when no @targetNamespace is used -->
+	<!-- CodigoAlfaCurto -->
+	<xs:simpleType name="CodigoAlfaCurto">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="collapse"/>
+			<xs:pattern value="[A-zÀ-ú0-9\-#\.\(\)/&amp;\s]{1,10}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- CodigoAlfaLongo -->
+	<xs:simpleType name="CodigoAlfaLongo">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="collapse"/>
+			<xs:pattern value="[A-zÀ-ú0-9\-#\.\(\)/&amp;\s]{1,15}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- DescricaoBreve -->
+	<xs:simpleType name="DescricaoBreve">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="collapse"/>
+			<xs:pattern value="[A-zÀ-ú0-9\-#\.\(\)/&amp;\s]{1,30}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- Descricao -->
+	<xs:simpleType name="Descricao">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="collapse"/>
+			<xs:pattern value="[A-zÀ-ú0-9\-#\.\(\)/&amp;\s]{1,50}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- nonEmptyString -->
+	<xs:simpleType name="nonEmptyString">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="collapse"/>
+			<xs:pattern value="(\s*[^\s]\s*)+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- Unidade -->
+	<xs:simpleType name="Unidade">
+		<xs:restriction base="xs:token">
+			<xs:whiteSpace value="collapse"/>
+			<xs:enumeration value="UN"/>
+			<xs:enumeration value="KG"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- Estado Ordem Produção -->
+	<xs:simpleType name="EstadoOrdemProducao">
+		<xs:restriction base="xs:token">
+			<xs:whiteSpace value="collapse"/>
+			<xs:enumeration value="PENDENTE"/>
+			<xs:enumeration value="EM_EXECUCAO"/>
+			<xs:enumeration value="EXECUCAO_PARADA_TEMPORARIAMENTE"/>
+			<xs:enumeration value="CONCLUIDA"/>
+			<xs:enumeration value="SUSPENSA"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- Tipos Movimento -->
+	<xs:simpleType name="TipoMovimento">
+		<xs:restriction base="xs:token">
+			<xs:whiteSpace value="collapse"/>
+			<xs:enumeration value="CONSUMO"/>
+			<xs:enumeration value="ESTORNO"/>
+			<xs:enumeration value="ENTREGA_PRODUCAO"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- Calendar -->
+	<xs:simpleType name="Calendar">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="collapse"/>
+			<xs:pattern value="(((0[1-9])|([1-2][0-9])|(3[0-1]))-((0[1-9])|(1[0-2]))-2[0-9]{3})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>

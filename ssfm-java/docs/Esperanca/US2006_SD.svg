@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1048.515625" height="488"><style xmlns="http://www.w3.org/1999/xhtml" type="text/css">
+svg text {
+  fill: #000;
+  stroke: none;
+  font-size: 12pt;
+  font-family: 'Andale Mono', monospace;
+}
+
+svg :not(text) {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.textbg {
+  fill: #fff;
+  stroke: none;
+}
+
+.rect {
+  fill: #fff;
+}
+
+.signal-solid {
+  stroke-dasharray: 0;
+}
+
+.signal-dotted {
+  stroke-dasharray: 5;
+}
+
+.arrow-filled {
+  marker-end: url(#arrow-filled);
+}
+
+.arrow-open {
+  marker-end: url(#arrow-open);
+}
+</style><defs><marker id="arrow-filled" refX="5" refY="2.5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 5,2.5 0,5z" style="stroke: none; fill: #000"/></marker><marker id="arrow-open" refX="5" refY="2.5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 5,2.5 0,5" style="stroke-width: 1"/></marker></defs><rect width="222.234375" height="28" x="10" y="10" class="rect"/><text x="121.1171875" y="24" style="text-anchor: middle; alignment-baseline: central;">Adicionar Novo Produto</text><rect width="192.828125" height="38" x="10" y="48" class="rect"/><text x="106.4140625" y="67" style="text-anchor: middle; alignment-baseline: central;">Gestor de Produção</text><rect width="192.828125" height="38" x="10" y="430" class="rect"/><text x="106.4140625" y="449" style="text-anchor: middle; alignment-baseline: central;">Gestor de Produção</text><path d="M106.4140625,86 v344" class="timeline"/><rect width="193.828125" height="38" x="222.828125" y="48" class="rect"/><text x="319.7421875" y="67" style="text-anchor: middle; alignment-baseline: central;">AdicionarProdutoUI</text><rect width="193.828125" height="38" x="222.828125" y="430" class="rect"/><text x="319.7421875" y="449" style="text-anchor: middle; alignment-baseline: central;">AdicionarProdutoUI</text><path d="M319.7421875,86 v344" class="timeline"/><rect width="271.03125" height="38" x="436.65625" y="48" class="rect"/><text x="572.171875" y="67" style="text-anchor: middle; alignment-baseline: central;">AdicionarProdutoController</text><rect width="271.03125" height="38" x="436.65625" y="430" class="rect"/><text x="572.171875" y="449" style="text-anchor: middle; alignment-baseline: central;">AdicionarProdutoController</text><path d="M572.171875,86 v344" class="timeline"/><rect width="87.203125" height="38" x="727.6875" y="48" class="rect"/><text x="771.2890625" y="67" style="text-anchor: middle; alignment-baseline: central;">Produto</text><rect width="87.203125" height="38" x="727.6875" y="430" class="rect"/><text x="771.2890625" y="449" style="text-anchor: middle; alignment-baseline: central;">Produto</text><path d="M771.2890625,86 v344" class="timeline"/><rect width="183.625" height="38" x="834.890625" y="48" class="rect"/><text x="926.703125" y="67" style="text-anchor: middle; alignment-baseline: central;">ProdutoRepository</text><rect width="183.625" height="38" x="834.890625" y="430" class="rect"/><text x="926.703125" y="449" style="text-anchor: middle; alignment-baseline: central;">ProdutoRepository</text><path d="M926.703125,86 v344" class="timeline"/><rect width="58" height="18" x="184.265625" y="102" class="textbg"/><text x="213.078125" y="111" style="text-anchor: middle; alignment-baseline: central;">onLoad</text><path d="M106.4140625,124 h213.328125" class="signal-solid arrow-filled"/><rect width="182.421875" height="18" x="121.859375" y="140" class="textbg"/><text x="213.078125" y="149" style="text-anchor: middle; alignment-baseline: central;">inserir dados (...)</text><path d="M106.4140625,162 h213.328125" class="signal-solid arrow-filled"/><rect width="77.203125" height="18" x="174.671875" y="178" class="textbg"/><text x="213.078125" y="187" style="text-anchor: middle; alignment-baseline: central;">submeter</text><path d="M106.4140625,200 h213.328125" class="signal-solid arrow-filled"/><rect width="201.625" height="18" x="345.140625" y="216" class="textbg"/><text x="445.95703125" y="225" style="text-anchor: middle; alignment-baseline: central;">adicionarProduto(...)</text><path d="M319.7421875,238 h252.4296875" class="signal-solid arrow-filled"/><rect width="153.625" height="18" x="597.171875" y="258" class="textbg"/><text x="673.984375" y="267" style="text-anchor: middle; alignment-baseline: central;">novoProduto(...)</text><path d="M572.171875,253 h20 v33 h-20" class="signal-solid arrow-filled"/><rect width="57.609375" height="18" x="642.921875" y="292" class="textbg"/><text x="671.73046875" y="301" style="text-anchor: middle; alignment-baseline: central;">create</text><path d="M572.171875,314 h199.1171875" class="signal-solid arrow-filled"/><rect width="38.40625" height="18" x="730.234375" y="330" class="textbg"/><text x="749.4375" y="339" style="text-anchor: middle; alignment-baseline: central;">save</text><path d="M572.171875,352 h354.53125" class="signal-solid arrow-filled"/><rect width="0" height="0" x="0" y="0" class="textbg"/><text x="445.95703125" y="377" style="text-anchor: middle; alignment-baseline: central;"/><path d="M572.171875,372 h-252.4296875" class="signal-dotted arrow-filled"/><rect width="154.625" height="18" x="344.234375" y="392" class="textbg"/><text x="422.0546875" y="401" style="text-anchor: middle; alignment-baseline: central;">mensagem sucesso</text><path d="M319.7421875,387 h20 v33 h-20" class="signal-solid arrow-filled"/></svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShopFloor_Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="main_xml.xsd">
+	<Depositos>
+		<deposito>
+			<codigo>AP002</codigo>
+			<descricao>depósito de granito</descricao>
+		</deposito>
+		<deposito>
+			<codigo>BP003</codigo>
+			<descricao>depósito de tubos</descricao>
+		</deposito>
+		<deposito>
+			<codigo>CP001</codigo>
+			<descricao>depósito de tábuas</descricao>
+		</deposito>
+	</Depositos>
+	<LinhasProducao>
+		<linhaProducao>
+			<idLinhaProducao>LP1</idLinhaProducao>
+		</linhaProducao>
+		<linhaProducao>
+			<idLinhaProducao>LP3</idLinhaProducao>
+		</linhaProducao>
+	</LinhasProducao>
+	<CategoriasMaterial>
+		<categoriaMaterial>
+			<codigoCatMaterial>cb</codigoCatMaterial>
+			<descricao>cobre</descricao>
+		</categoriaMaterial>
+	</CategoriasMaterial>
+	<OrdensProducao>
+		<ordemProducao>
+			<idOrdem>3530</idOrdem>
+			<dataEmissao>29-12-2018</dataEmissao>
+			<dataPrevistaExec>30-12-2018</dataPrevistaExec>
+			<codigoFabProduto>50000106</codigoFabProduto>
+			<quantidade>65000.0</quantidade>
+			<estadoOrdem>PENDENTE</estadoOrdem>
+			<idLinhaProducao>LP1</idLinhaProducao>
+		</ordemProducao>
+		<!--Existem ordens com id superior ou igual a 4k-->
+	</OrdensProducao>
+</ShopFloor_Report>

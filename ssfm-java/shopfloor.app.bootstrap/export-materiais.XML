@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Materiais xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Materiais.xsd">
+<Materiais>
+<material>
+<codigo>grp</codigo>
+<descricao>granito preto</descricao>
+<categoria>
+<codigo>pd</codigo>
+<descricao>pedra</descricao>
+</categoria>
+<fichaTecnica>
+<nome>fgranito</nome>
+<path>fgranito</path>
+</fichaTecnica>
+</Material>
+<material>
+<codigo>crpt</codigo>
+<descricao>carvalho portugues</descricao>
+<categoria>
+<codigo>md</codigo>
+<descricao>madeira</descricao>
+</categoria>
+<fichaTecnica>
+<nome>fcarvalho</nome>
+<path>fcarvalho</path>
+</fichaTecnica>
+</Material>
+<material>
+<codigo>tcb</codigo>
+<descricao>tubo cobre</descricao>
+<categoria>
+<codigo>cb</codigo>
+<descricao>cobre</descricao>
+</categoria>
+<fichaTecnica>
+<nome>tcobre</nome>
+<path>tcobre</path>
+</fichaTecnica>
+</Material>
+</Materiais>

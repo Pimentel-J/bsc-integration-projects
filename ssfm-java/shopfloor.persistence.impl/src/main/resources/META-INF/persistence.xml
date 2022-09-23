@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+  <persistence-unit name="eapli.shopfloor">
+      <!--
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    -->
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <class>eapli.framework.infrastructure.authz.domain.model.SystemUser</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.Role</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.RoleSet</class>
+    <class>eapli.framework.infrastructure.authz.domain.model.RoleAssignment</class>
+    <class>eapli.shopfloor.clientusermanagement.domain.ClientUser</class>
+    <class>eapli.shopfloor.clientusermanagement.domain.SignupRequest</class>
+    <class>eapli.shopfloor.gestaochaofabrica.domain.Deposito</class>
+    <class>eapli.shopfloor.gestaochaofabrica.domain.Maquina</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.Material</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.CategoriaMaterial</class>
+    <class>eapli.shopfloor.gestaochaofabrica.domain.LinhaProducao</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.Produto</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.FichaProducao</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.MateriaPrima</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.OrdemProducao</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.ExecucaoOrdemProducao</class>
+    <class>eapli.shopfloor.SCM.application.IdParaIp</class>
+    <class>eapli.shopfloor.SCM.domain.Mensagem</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.Atividade</class>
+    <class>eapli.shopfloor.gestaoproducao.domain.Movimento</class>
+    <class>eapli.shopfloor.SPM.domain.NotificacaoErroProcessamento</class>
+
+    <properties>
+<!--       SERVER MODE-->
+      <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://vs324.dei.isep.ipp.pt:1521/shopfloor"/>
+<!--       SERVER MODE (without running h2 first) -->
+<!--       <property name="javax.persistence.jdbc.url" value="jdbc:h2:..\db\base;AUTO_SERVER=true;"/>-->
+<!--       EMBEDDED MODE -->
+<!--       <property name="javax.persistence.jdbc.url" value="jdbc:h2:..\db\base;MV_STORE=FALSE"/>-->
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.password" value="eapli"/>
+      <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+      <!-- <property name="eclipselink.logging.level" value="FINE"/> -->
+<!--       Hibernate's build-in function to show generated SQL statements on the console -->
+<!--      <property name = "hibernate.show_sql" value = "true" />-->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+      <property name = "hibernate.show_sql" value = "false" />
+<!--        Maintain the schema to follow any changes made to the Model each time you run the app -->
+<!--       <property name="hibernate.hbm2ddl.auto" value="update"/>-->
+
+    </properties>
+  </persistence-unit>
+</persistence>

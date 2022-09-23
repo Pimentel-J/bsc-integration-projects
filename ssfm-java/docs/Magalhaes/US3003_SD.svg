@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1076.703125" height="488"><style xmlns="http://www.w3.org/1999/xhtml" type="text/css">
+svg text {
+  fill: #000;
+  stroke: none;
+  font-size: 12pt;
+  font-family: 'Andale Mono', monospace;
+}
+
+svg :not(text) {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.textbg {
+  fill: #fff;
+  stroke: none;
+}
+
+.rect {
+  fill: #fff;
+}
+
+.signal-solid {
+  stroke-dasharray: 0;
+}
+
+.signal-dotted {
+  stroke-dasharray: 5;
+}
+
+.arrow-filled {
+  marker-end: url(#arrow-filled);
+}
+
+.arrow-open {
+  marker-end: url(#arrow-open);
+}
+</style><defs><marker id="arrow-filled" refX="5" refY="2.5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 5,2.5 0,5z" style="stroke: none; fill: #000"/></marker><marker id="arrow-open" refX="5" refY="2.5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 5,2.5 0,5" style="stroke-width: 1"/></marker></defs><rect width="173.21875" height="28" x="10" y="10" class="rect"/><text x="96.609375" y="24" style="text-anchor: middle; alignment-baseline: central;">Registar Depósito</text><rect width="260.03125" height="38" x="10" y="48" class="rect"/><text x="140.015625" y="67" style="text-anchor: middle; alignment-baseline: central;">Gestor de Chão de Fábrica</text><rect width="260.03125" height="38" x="10" y="430" class="rect"/><text x="140.015625" y="449" style="text-anchor: middle; alignment-baseline: central;">Gestor de Chão de Fábrica</text><path d="M140.015625,86 v344" class="timeline"/><rect width="136.609375" height="38" x="290.03125" y="48" class="rect"/><text x="358.3359375" y="67" style="text-anchor: middle; alignment-baseline: central;">DepositoForm</text><rect width="136.609375" height="38" x="290.03125" y="430" class="rect"/><text x="358.3359375" y="449" style="text-anchor: middle; alignment-baseline: central;">DepositoForm</text><path d="M358.3359375,86 v344" class="timeline"/><rect width="270.03125" height="38" x="446.640625" y="48" class="rect"/><text x="581.65625" y="67" style="text-anchor: middle; alignment-baseline: central;">RegistarDepositoController</text><rect width="270.03125" height="38" x="446.640625" y="430" class="rect"/><text x="581.65625" y="449" style="text-anchor: middle; alignment-baseline: central;">RegistarDepositoController</text><path d="M581.65625,86 v344" class="timeline"/><rect width="96.8125" height="38" x="736.671875" y="48" class="rect"/><text x="785.078125" y="67" style="text-anchor: middle; alignment-baseline: central;">Depósito</text><rect width="96.8125" height="38" x="736.671875" y="430" class="rect"/><text x="785.078125" y="449" style="text-anchor: middle; alignment-baseline: central;">Depósito</text><path d="M785.078125,86 v344" class="timeline"/><rect width="193.21875" height="38" x="853.484375" y="48" class="rect"/><text x="950.09375" y="67" style="text-anchor: middle; alignment-baseline: central;">DepositoRepository</text><rect width="193.21875" height="38" x="853.484375" y="430" class="rect"/><text x="950.09375" y="449" style="text-anchor: middle; alignment-baseline: central;">DepositoRepository</text><path d="M950.09375,86 v344" class="timeline"/><rect width="58" height="18" x="220.359375" y="102" class="textbg"/><text x="249.17578125" y="111" style="text-anchor: middle; alignment-baseline: central;">onLoad</text><path d="M140.015625,124 h218.3203125" class="signal-solid arrow-filled"/><rect width="182.421875" height="18" x="157.953125" y="140" class="textbg"/><text x="249.17578125" y="149" style="text-anchor: middle; alignment-baseline: central;">inserir dados (...)</text><path d="M140.015625,162 h218.3203125" class="signal-solid arrow-filled"/><rect width="77.203125" height="18" x="210.765625" y="178" class="textbg"/><text x="249.17578125" y="187" style="text-anchor: middle; alignment-baseline: central;">submeter</text><path d="M140.015625,200 h218.3203125" class="signal-solid arrow-filled"/><rect width="201.625" height="18" x="369.171875" y="216" class="textbg"/><text x="469.99609375" y="225" style="text-anchor: middle; alignment-baseline: central;">registarDeposito(...)</text><path d="M358.3359375,238 h223.3203125" class="signal-solid arrow-filled"/><rect width="163.21875" height="18" x="606.640625" y="258" class="textbg"/><text x="688.265625" y="267" style="text-anchor: middle; alignment-baseline: central;">novoDeposito(...)</text><path d="M581.65625,253 h20 v33 h-20" class="signal-solid arrow-filled"/><rect width="57.609375" height="18" x="654.5625" y="292" class="textbg"/><text x="683.3671875" y="301" style="text-anchor: middle; alignment-baseline: central;">create</text><path d="M581.65625,314 h203.421875" class="signal-solid arrow-filled"/><rect width="38.40625" height="18" x="746.671875" y="330" class="textbg"/><text x="765.875" y="339" style="text-anchor: middle; alignment-baseline: central;">save</text><path d="M581.65625,352 h368.4375" class="signal-solid arrow-filled"/><rect width="0" height="0" x="0" y="0" class="textbg"/><text x="469.99609375" y="377" style="text-anchor: middle; alignment-baseline: central;"/><path d="M581.65625,372 h-223.3203125" class="signal-dotted arrow-filled"/><rect width="154.625" height="18" x="382.828125" y="392" class="textbg"/><text x="460.6484375" y="401" style="text-anchor: middle; alignment-baseline: central;">mensagem sucesso</text><path d="M358.3359375,387 h20 v33 h-20" class="signal-solid arrow-filled"/></svg>

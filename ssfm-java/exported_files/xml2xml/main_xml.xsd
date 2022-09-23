@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- XSD Geral -->
+	<xs:include schemaLocation="ChaoFabricaSimpleTypes.xsd"/>
+
+	<xs:element name="ShopFloor_Report">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Depositos" type="Tdepositos"/>
+				<xs:element name="LinhasProducao" type="TlinhasProducao"/>
+				<xs:element name="CategoriasMaterial" type="TcategoriasMaterial"/>
+				<xs:element name="OrdensProducao" type="TordensProducao"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- DEPÓSITOS -->
+	<xs:complexType name="Tdepositos">
+		<xs:sequence>
+			<xs:element name="deposito" type="Tdeposito" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- DEPÓSITO -->
+	<xs:complexType name="Tdeposito">
+		<xs:sequence>
+			<xs:element name="codigo" type="CodigoAlfaCurto"/>
+			<xs:element name="descricao" type="Descricao"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- LINHAS PRODUCAO -->
+	<xs:complexType name="TlinhasProducao">
+		<xs:sequence>
+			<xs:element name="linhaProducao" type="TlinhaProducao" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- LINHA PRODUÇÃO -->
+	<xs:complexType name="TlinhaProducao">
+		<xs:sequence>
+			<xs:element name="idLinhaProducao" type="CodigoAlfaCurto"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- CATEGS. MATERIAL -->
+	<xs:complexType name="TcategoriasMaterial">
+		<xs:sequence>
+			<xs:element name="categoriaMaterial" type="TcategoriaMaterial" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- CATEG. MATERIAL -->
+	<xs:complexType name="TcategoriaMaterial">
+		<xs:sequence>
+			<xs:element name="codigoCatMaterial" type="CodigoAlfaCurto"/>
+			<xs:element name="descricao" type="Descricao"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ORDENS PRODUÇÃO -->
+	<xs:complexType name="TordensProducao">
+		<xs:sequence>
+			<xs:element name="ordemProducao" type="TordemProducao" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- ORDEM PRODUÇÃO -->
+	<xs:complexType name="TordemProducao">
+		<xs:sequence>
+			<xs:element name="idOrdem" type="xs:integer"/>
+			<xs:element name="dataEmissao" type="Calendar"/>
+			<xs:element name="dataPrevistaExec" type="Calendar"/>
+			<xs:element name="codigoFabProduto" type="CodigoAlfaCurto"/>
+			<xs:element name="quantidade" type="xs:float"/>
+			<xs:element name="estadoOrdem" type="EstadoOrdemProducao"/>
+			<xs:element name="idLinhaProducao" type="CodigoAlfaCurto" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

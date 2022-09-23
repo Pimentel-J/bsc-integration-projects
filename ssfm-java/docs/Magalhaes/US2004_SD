@@ -1,0 +1,42 @@
+title: Registar Ficha de Produção
+
+participant Gestor de Produção as gp
+participant FichaProducaoUI as fpui
+participant FichaProducaoController as fpc
+participant ProdutoRepository as pr
+participant MaterialRepository as mr
+participant FichaProducao as fp
+participant ProdutoRepository as pr
+participant MateriaPrima as mp
+
+gp->fpui: onLoad
+fpui->fpc: listarProdutos
+fpc->pr: listarProdutos
+fpui->fpui: show
+gp->fpui: insere dados (produto, qtdStandard)
+fpui->fpc: adicionarQtdStandard(qtdStandard)
+fpui->fpc: verificaFichaProducao(produto)
+fpc->pr: temFichaProducao(produto)
+note left of fpui: Se existe Ficha de Produção para o produto selecionado,
+note left of fpui: pergunta ao GP se pretende substituir
+fpc->FichaProducaoBuilder: create
+fpc->FichaProducaoBuilder: withQtdStandard(qtdStandard)
+note right of fpui: Carregar lista de materiais para eventual seleção
+fpui->fpc: listarMateriais
+fpc->mr: listarMateriais
+note right of fpui: while adicionarMateriaPrima
+gp->fpui: adicionar Materia-Prima
+fpui->fpui: show ("selecionar material/produto")
+gp->fpui: insere dados (matéria-prima, qtd)
+fpui->fpc: insereMateriaPrima(matéria-prima, qtd)
+fpc->mp: create(prod/mat, qt)
+fpc->FichaProducaoBuilder: withMateriaPrima(prod/mat)
+note right of fpui: end while
+gp->fpui: submeter
+fpui->fpc: registarFichaProducao
+fpc->FichaProducaoBuilder: buildFichaProducao
+FichaProducaoBuilder->fp: create
+fpc->Produto: associarFichaProducao(FichaProducao)
+fpc->pr: save
+fpc-->fpui:
+fpui->fpui: mensagem sucesso

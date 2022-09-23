@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShopFloor_Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/main.xsd">
+    <GestaoChaoFabrica>
+        <Depositos>
+            <deposito>
+                <codigo>DP001</codigo>
+                <descricao>depósito de tábuas</descricao>
+            </deposito>
+            <deposito>
+                <codigo>DP002</codigo>
+                <descricao>depósito de granito</descricao>
+            </deposito>
+            <deposito>
+                <codigo>DP003</codigo>
+                <descricao>depósito de tubos</descricao>
+            </deposito>
+            <deposito>
+                <codigo>L030</codigo>
+                <descricao>depósito de madeira</descricao>
+            </deposito>
+            <deposito>
+                <codigo>L040</codigo>
+                <descricao>depósito de pedra</descricao>
+            </deposito>
+            <deposito>
+                <codigo>L042</codigo>
+                <descricao>depósito de cobre</descricao>
+            </deposito>
+        </Depositos>
+        <Maquinas>
+            <maquina>
+                <idMaquina>T3</idMaquina>
+                <numSerie>10101</numSerie>
+                <descricao>Prensa alisamento propulsores</descricao>
+                <dataInstalacao>10-05-2020</dataInstalacao>
+                <marca>AGME</marca>
+                <modelo>A101</modelo>
+                <idLinhaProducao>LP1</idLinhaProducao>
+                <sequencia>1</sequencia>
+                <idProtocolo>101</idProtocolo>
+            </maquina>
+            <maquina>
+                <idMaquina>M2</idMaquina>
+                <numSerie>30303</numSerie>
+                <descricao>Torno polimento metais</descricao>
+                <dataInstalacao>11-05-2020</dataInstalacao>
+                <marca>Rieckermann</marca>
+                <modelo>A303</modelo>
+                <idLinhaProducao>LP1</idLinhaProducao>
+                <sequencia>2</sequencia>
+                <idProtocolo>303</idProtocolo>
+            </maquina>
+            <maquina>
+                <idMaquina>DD4</idMaquina>
+                <numSerie>20202</numSerie>
+                <descricao>Soldadura a laser e corte</descricao>
+                <dataInstalacao>12-05-2020</dataInstalacao>
+                <marca>AGME</marca>
+                <modelo>R202</modelo>
+                <idLinhaProducao>LP1</idLinhaProducao>
+                <sequencia>3</sequencia>
+                <idProtocolo>202</idProtocolo>
+            </maquina>
+            <maquina>
+                <idMaquina>T1</idMaquina>
+                <numSerie>40404</numSerie>
+                <descricao>Quinadora de aço</descricao>
+                <dataInstalacao>13-05-2020</dataInstalacao>
+                <marca>Aires da Costa</marca>
+                <modelo>R404</modelo>
+                <idLinhaProducao>LP2</idLinhaProducao>
+                <sequencia>1</sequencia>
+                <idProtocolo>404</idProtocolo>
+            </maquina>
+            <maquina>
+                <idMaquina>T2</idMaquina>
+                <numSerie>50505</numSerie>
+                <descricao>Forno de Vidro</descricao>
+                <dataInstalacao>14-05-2020</dataInstalacao>
+                <marca>Juncker</marca>
+                <modelo>R505</modelo>
+                <idLinhaProducao>LP2</idLinhaProducao>
+                <sequencia>2</sequencia>
+                <idProtocolo>505</idProtocolo>
+            </maquina>
+            <maquina>
+                <idMaquina>DD3</idMaquina>
+                <numSerie>60606</numSerie>
+                <descricao>Transportadora de correia</descricao>
+                <dataInstalacao>15-05-2020</dataInstalacao>
+                <marca>Kraftwerk</marca>
+                <modelo>R606</modelo>
+                <idLinhaProducao>LP2</idLinhaProducao>
+                <sequencia>3</sequencia>
+                <idProtocolo>606</idProtocolo>
+            </maquina>
+        </Maquinas>
+        <LinhasProducao>
+            <linhaProducao>
+                <idLinhaProducao>LP1</idLinhaProducao>
+            </linhaProducao>
+            <linhaProducao>
+                <idLinhaProducao>LP2</idLinhaProducao>
+            </linhaProducao>
+            <linhaProducao>
+                <idLinhaProducao>LP3</idLinhaProducao>
+            </linhaProducao>
+        </LinhasProducao>
+    </GestaoChaoFabrica>
+    <GestaoProducao>
+        <Materiais>
+            <material>
+                <codigoMaterial>grp</codigoMaterial>
+                <descricao>granito preto</descricao>
+                <codigoCatMaterial>pd</codigoCatMaterial>
+                <fichaTecnica nome="fgranito" path="fgranito"/>
+            </material>
+            <material>
+                <codigoMaterial>crpt</codigoMaterial>
+                <descricao>carvalho portugues</descricao>
+                <codigoCatMaterial>md</codigoCatMaterial>
+                <fichaTecnica nome="fcarvalho" path="fcarvalho"/>
+            </material>
+            <material>
+                <codigoMaterial>tcb</codigoMaterial>
+                <descricao>tubo cobre</descricao>
+                <codigoCatMaterial>cb</codigoCatMaterial>
+                <fichaTecnica nome="tcobre" path="tcobre"/>
+            </material>
+        </Materiais>
+        <CategoriasMaterial>
+            <categoriaMaterial>
+                <codigoCatMaterial>md</codigoCatMaterial>
+                <descricao>madeira</descricao>
+            </categoriaMaterial>
+            <categoriaMaterial>
+                <codigoCatMaterial>pd</codigoCatMaterial>
+                <descricao>pedra</descricao>
+            </categoriaMaterial>
+            <categoriaMaterial>
+                <codigoCatMaterial>cb</codigoCatMaterial>
+                <descricao>cobre</descricao>
+            </categoriaMaterial>
+        </CategoriasMaterial>
+        <Produtos>
+            <produto>
+                <codigoFabricoProduto>77000651</codigoFabricoProduto>
+                <codigoComercial>PRD1-COM</codigoComercial>
+                <descricaoBreve>Cadeira</descricaoBreve>
+                <descricaoCompleta>Cadeira com 4 pernas</descricaoCompleta>
+                <unidadeProduto>UN</unidadeProduto>
+                <codigoCatProduto>CAT1</codigoCatProduto>
+            </produto>
+            <produto>
+                <codigoFabricoProduto>65000106</codigoFabricoProduto>
+                <codigoComercial>PRD2-COM</codigoComercial>
+                <descricaoBreve>Cimento</descricaoBreve>
+                <descricaoCompleta>Cimento  construção</descricaoCompleta>
+                <unidadeProduto>KG</unidadeProduto>
+                <codigoCatProduto>CAT2</codigoCatProduto>
+                <fichaProducao>
+                    <quantidadeStandard>
+                        <quantidade>1000.0</quantidade>
+                        <unidade>KG</unidade>
+                    </quantidadeStandard>
+                </fichaProducao>
+            </produto>
+            <produto>
+                <codigoFabricoProduto>41000651</codigoFabricoProduto>
+                <codigoComercial>PRD3-COM</codigoComercial>
+                <descricaoBreve>Armário</descricaoBreve>
+                <descricaoCompleta>Armário ergonómico com arrumação</descricaoCompleta>
+                <unidadeProduto>UN</unidadeProduto>
+                <codigoCatProduto>CAT1</codigoCatProduto>
+            </produto>
+            <produto>
+                <codigoFabricoProduto>50000106</codigoFabricoProduto>
+                <codigoComercial>PRD3-COM</codigoComercial>
+                <descricaoBreve>Aspirador</descricaoBreve>
+                <descricaoCompleta>Poder de sucção fenomenal</descricaoCompleta>
+                <unidadeProduto>UN</unidadeProduto>
+                <codigoCatProduto>CAT3</codigoCatProduto>
+                <fichaProducao>
+                    <quantidadeStandard>
+                        <quantidade>1000.0</quantidade>
+                        <unidade>UN</unidade>
+                    </quantidadeStandard>
+                </fichaProducao>
+            </produto>
+            <produto>
+                <codigoFabricoProduto>32000142</codigoFabricoProduto>
+                <codigoComercial>PRD5-COM</codigoComercial>
+                <descricaoBreve>Parafuso</descricaoBreve>
+                <descricaoCompleta>Parafuso calibre 5</descricaoCompleta>
+                <unidadeProduto>UN</unidadeProduto>
+                <codigoCatProduto>CAT2</codigoCatProduto>
+            </produto>
+            <produto>
+                <codigoFabricoProduto>32000150</codigoFabricoProduto>
+                <codigoComercial>PRD5-COM</codigoComercial>
+                <descricaoBreve>Bucha</descricaoBreve>
+                <descricaoCompleta>Bucha calibre 5</descricaoCompleta>
+                <unidadeProduto>UN</unidadeProduto>
+                <codigoCatProduto>CAT2</codigoCatProduto>
+            </produto>
+        </Produtos>
+        <OrdensProducao>
+            <ordemProducao>
+                <idOrdem>100003363</idOrdem>
+                <dataEmissao>29-12-2018</dataEmissao>
+                <dataPrevistaExec>30-12-2018</dataPrevistaExec>
+                <codigoFabProduto>50000106</codigoFabProduto>
+                <quantidade>65000.0</quantidade>
+                <estadoOrdem>CONCLUIDA</estadoOrdem>
+                <idLinhaProducao>LP1</idLinhaProducao>
+            </ordemProducao>
+            <ordemProducao>
+                <idOrdem>100003470</idOrdem>
+                <dataEmissao>20-02-2020</dataEmissao>
+                <dataPrevistaExec>26-02-2020</dataPrevistaExec>
+                <codigoFabProduto>32000150</codigoFabProduto>
+                <quantidade>25000.0</quantidade>
+                <estadoOrdem>CONCLUIDA</estadoOrdem>
+                <idLinhaProducao>LP2</idLinhaProducao>
+            </ordemProducao>
+        </OrdensProducao>
+    </GestaoProducao>
+</ShopFloor_Report>

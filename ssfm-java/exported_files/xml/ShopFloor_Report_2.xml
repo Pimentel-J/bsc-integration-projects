@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml2xml.xsl" ?>
+<GestaoChaoFabrica>
+	<Depositos>
+		<deposito>
+			<codigo>dep1</codigo>
+			<descricao>decr</descricao>
+		</deposito>
+		<deposito>
+			<codigo>dep2</codigo>
+			<descricao>descr</descricao>
+		</deposito>
+	</Depositos>
+	<Maquinas>
+		<maquina>
+			<idMaquina>m1</idMaquina>
+			<numSerie>1</numSerie>
+			<descricao>String</descricao>
+			<dataInstalacao>01-01-2020</dataInstalacao>
+			<marca>String</marca>
+			<modelo>String</modelo>
+			<idLinhaProducao>lp1</idLinhaProducao>
+			<sequencia>1</sequencia>
+			<idProtocolo>2</idProtocolo>
+		</maquina>
+		<maquina>
+			<idMaquina>m2</idMaquina>
+			<numSerie>2</numSerie>
+			<descricao>String</descricao>
+			<dataInstalacao>01-01-2020</dataInstalacao>
+			<marca>String</marca>
+			<modelo>String</modelo>
+			<idLinhaProducao>lp2</idLinhaProducao>
+			<sequencia>1</sequencia>
+			<idProtocolo>2</idProtocolo>
+		</maquina>
+	</Maquinas>
+	<LinhasProducao>
+		<linhaProducao>
+			<idLinhaProducao>lp1</idLinhaProducao>
+		</linhaProducao>
+		<linhaProducao>
+			<idLinhaProducao>lp2</idLinhaProducao>
+		</linhaProducao>
+	</LinhasProducao>
+</GestaoChaoFabrica>

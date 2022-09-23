@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml2xml.xsl" ?>
+<ShopFloor_Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="main_xml.xsd">
+    <Depositos>
+        <deposito>
+            <codigo>CP001</codigo>
+            <descricao>depósito de tábuas</descricao>
+        </deposito>
+        <deposito>
+            <codigo>AP002</codigo>
+            <descricao>depósito de granito</descricao>
+        </deposito>
+        <deposito>
+            <codigo>BP003</codigo>
+            <descricao>depósito de tubos</descricao>
+        </deposito>
+        <deposito>
+            <codigo>ZB004</codigo>
+            <descricao>depósito de tubos</descricao>
+        </deposito>
+    </Depositos>
+    <LinhasProducao>
+        <linhaProducao>
+            <idLinhaProducao>LP1</idLinhaProducao>
+        </linhaProducao>
+        <linhaProducao>
+            <idLinhaProducao>ZP2</idLinhaProducao>
+        </linhaProducao>
+        <linhaProducao>
+            <idLinhaProducao>LP3</idLinhaProducao>
+        </linhaProducao>
+    </LinhasProducao>
+    <CategoriasMaterial>
+        <categoriaMaterial>
+            <codigoCatMaterial>md</codigoCatMaterial>
+            <descricao>madeira</descricao>
+        </categoriaMaterial>
+        <categoriaMaterial>
+            <codigoCatMaterial>pd</codigoCatMaterial>
+            <descricao>pedra</descricao>
+        </categoriaMaterial>
+        <categoriaMaterial>
+            <codigoCatMaterial>cb</codigoCatMaterial>
+            <descricao>cobre</descricao>
+        </categoriaMaterial>
+    </CategoriasMaterial>
+    <OrdensProducao>
+        <ordemProducao>
+            <idOrdem>3530</idOrdem>
+            <dataEmissao>29-12-2018</dataEmissao>
+            <dataPrevistaExec>30-12-2018</dataPrevistaExec>
+            <codigoFabProduto>50000106</codigoFabProduto>
+            <quantidade>65000.0</quantidade>
+            <estadoOrdem>PENDENTE</estadoOrdem>
+            <idLinhaProducao>LP1</idLinhaProducao>
+        </ordemProducao>
+        <ordemProducao>
+            <idOrdem>4320</idOrdem>
+            <dataEmissao>20-02-2020</dataEmissao>
+            <dataPrevistaExec>26-02-2020</dataPrevistaExec>
+            <codigoFabProduto>32000150</codigoFabProduto>
+            <quantidade>25000.0</quantidade>
+            <estadoOrdem>CONCLUIDA</estadoOrdem>
+            <idLinhaProducao>LP3</idLinhaProducao>
+        </ordemProducao>
+    </OrdensProducao>
+</ShopFloor_Report>

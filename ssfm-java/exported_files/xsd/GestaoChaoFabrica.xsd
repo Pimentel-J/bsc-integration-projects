@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Schema Gestão Chão de Fábrica -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="ChaoFabricaSimpleTypes.xsd"/>
+	<!-- GESTÃO CHÃO FÁBRICA -->
+	<xs:element name="GestaoChaoFabrica" type="TgestaoChaoFabrica"/>
+	<xs:complexType name="TgestaoChaoFabrica">
+		<xs:sequence>
+			<xs:element name="Depositos" type="Tdepositos"/>
+			<xs:element name="Maquinas" type="Tmaquinas"/>
+			<xs:element name="LinhasProducao" type="TlinhasProducao"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- DEPÓSITOS -->
+	<xs:complexType name="Tdepositos">
+		<xs:sequence>
+			<xs:element name="deposito" type="Tdeposito" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- DEPÓSITO -->
+	<xs:complexType name="Tdeposito">
+		<xs:sequence>
+			<xs:element name="codigo" type="CodigoAlfaCurto"/>
+			<xs:element name="descricao" type="Descricao"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- MÁQUINAS -->
+	<xs:complexType name="Tmaquinas">
+		<xs:sequence>
+			<xs:element name="maquina" type="Tmaquina" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- MÁQUINA -->
+	<xs:complexType name="Tmaquina">
+		<xs:sequence>
+			<xs:element name="idMaquina" type="CodigoAlfaCurto"/>
+			<xs:element name="numSerie" type="xs:positiveInteger"/>
+			<xs:element name="descricao" type="Descricao"/>
+			<xs:element name="dataInstalacao" type="Calendar"/>
+			<xs:element name="marca" type="Descricao"/>
+			<xs:element name="modelo" type="CodigoAlfaCurto"/>
+			<xs:element name="idLinhaProducao" type="CodigoAlfaCurto"/>
+			<xs:element name="sequencia" type="xs:positiveInteger"/>
+			<xs:element name="idProtocolo" type="xs:positiveInteger"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- LINHAS PRODUCAO -->
+	<xs:complexType name="TlinhasProducao">
+		<xs:sequence>
+			<xs:element name="linhaProducao" type="TlinhaProducao" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- LINHA PRODUÇÃO -->
+	<xs:complexType name="TlinhaProducao">
+		<xs:sequence>
+			<xs:element name="idLinhaProducao" type="CodigoAlfaCurto"/>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
