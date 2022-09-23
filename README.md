@@ -25,11 +25,17 @@ Multidisciplinary and integrated projects developed by a group of students each 
 
 2. [Service Provider](./agpsd-java/)
 
+3. [Ride-Sharing](./rsa-java/)
+
+4. [Smart Shop Floor Management](./ssfm-java/)
+
+5. [Public Transportation Management and Planning System](./ptmps-js-ts-csharp/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [ISEP-badge]: https://img.shields.io/badge/ISEP-orange.svg?style=for-the-badge&logo=Leanpub&logoColor=white
 [ISEP-url]: https://www.isep.ipp.pt/
-[ISEP-LEI-badge]: https://img.shields.io/badge/LEI-gray.svg?style=for-the-badge&logo=HTMLAcademy&logoColor=white
+[ISEP-LEI-badge]: https://img.shields.io/badge/LEI_BSc-gray.svg?style=for-the-badge&logo=HTMLAcademy&logoColor=white
 [ISEP-LEI-url]: https://www.isep.ipp.pt/Course/Course/26
