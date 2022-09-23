@@ -9,6 +9,7 @@
 [![Bitbucket][Bitbucket-badge]][Bitbucket-url]
 [![Sourcetree][Sourcetree-badge]][Sourcetree-url]
 [![Trello][Trello-badge]][Trello-url]
+[![VSCode][VSCode-badge]][VSCode-url]
 [![ISEP][ISEP-badge]][ISEP-url]
 
 ## Table of Contents
@@ -50,3 +51,5 @@ Social network analysis with a simplified version of Google’s Page Rank algori
 [Sourcetree-url]: https://www.sourcetreeapp.com/
 [Trello-badge]: https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white
 [Trello-url]: https://trello.com/
+[VSCode-badge]: https://img.shields.io/badge/VSCode-007ACC.svg?style=for-the-badge&logo=VisualStudioCode&logoColor=white
+[VSCode-url]: https://code.visualstudio.com/

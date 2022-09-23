@@ -11,6 +11,7 @@
 [![Jira-Software][Jira-Software-badge]][Jira-Software-url]
 [![Bitbucket][Bitbucket-badge]][Bitbucket-url]
 [![Sourcetree][Sourcetree-badge]][Sourcetree-url]
+[![VSCode][VSCode-badge]][VSCode-url]
 [![Visual-Paradigm][Visual-Paradigm-badge]][Visual-Paradigm-url]
 [![ISEP][ISEP-badge]][ISEP-url]
 
@@ -70,5 +71,7 @@ Support of ridesharing businesses. From managing routes, users, bicycles, electr
 [Sourcetree-url]: https://www.sourcetreeapp.com/
 [Trello-badge]: https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white
 [Trello-url]: https://trello.com/
-[Visual-Paradigm-badge]: https://img.shields.io/badge/visual_paradigm-EF3939.svg?style=for-the-badge&logo=visualparadigm&logoColor=white
+[Visual-Paradigm-badge]: https://img.shields.io/badge/visual_paradigm-CC3333.svg?style=for-the-badge&logo=Skypack&logoColor=white
 [Visual-Paradigm-url]: https://www.visual-paradigm.com/
+[VSCode-badge]: https://img.shields.io/badge/VSCode-007ACC.svg?style=for-the-badge&logo=VisualStudioCode&logoColor=white
+[VSCode-url]: https://code.visualstudio.com/
