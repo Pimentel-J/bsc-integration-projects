@@ -16,7 +16,7 @@
 
 Esta wiki é o Software Architecture Document (SAD)/Documento de Arquitetura de Software (DAS) da aplicação solicitada pela Autoridade Intermunicipal de Transportes (AIT), e desenvolvida no contexto do 5º semestre da LEI em 2020-2021 com o apoio da empresa [OPT – Optimização e Planeamento de Transportes, S.A.](http://opt.pt/)
 
-> Mais informações no [Readme principal do projeto](https://bitbucket.org/pvpmagalhaes1/20s5_3na_2/src/master/README.md).
+> Mais informações no [Readme principal do projeto](../Project_MDR/README.md).
 
 ## Este DAS é constituído por:
 
@@ -24,7 +24,7 @@ Esta wiki é o Software Architecture Document (SAD)/Documento de Arquitetura de 
 - [Background da Arquitetura](Background.md)
 - [Vistas](Views.md)
 - [Mapeamento entre Vistas](Mapping.md)
-- [User Stories - Análise e Design](https://bitbucket.org/pvpmagalhaes1/20s5_3na_2/src/master/Docs/us.md)
+- [User Stories - Análise e Design](../Project_MDR/Docs/us.md)
 - [Bibliografia e Referências](References.md)
 - [Glossário e Acrónimos](GlossaryAcronyms.md)
 
@@ -32,25 +32,25 @@ Esta wiki é o Software Architecture Document (SAD)/Documento de Arquitetura de 
 
 ## Constituição do Grupo de Trabalho - 20S5_3NA_2
 
-| Aluno Nr.	   | Nome do Aluno		|
-|--------------|--------------------|
-| 1181426 | Bruno Calisto |
-| 1161874 | João Pimentel |
-| 1181455 | Pedro Magalhães |
-| 1181483 | Samuel Esperança |
-| 1850041 | Vítor Oliveira |
+| Nome do Aluno	  |
+|-------------------|
+| Bruno Calisto     |
+| João Pimentel     |
+| Pedro Magalhães   |
+| Samuel Esperança  |
+| Vítor Oliveira    |
 
 ## Módulos da App
 
-- [Master Data Rede](https://bitbucket.org/pvpmagalhaes1/20s5_3na_2/src/master/)
+- [Master Data Rede](../Project_MDR/)
 
-- [Master Data Viagem](https://bitbucket.org/pvpmagalhaes1/20s5_3na_2mdv/src/master)
+- [Master Data Viagem](../Project_MDV/)
 
-- [Planeamento](https://bitbucket.org/pvpmagalhaes1/20s5_3na_2/src/b04bd0a385d1872392a69f6007c39caae1ae7504/Planeamento/)
+- [Planeamento](../Project_MDR/Planeamento/)
 
-- [SPA](https://bitbucket.org/pvpmagalhaes1/20s5-3na-2spa/src/master)
+- [SPA](../Project_SPA/SPA/)
 
-- [Readme do Projeto](https://bitbucket.org/pvpmagalhaes1/20s5_3na_2/src/master/README.md)
+- [Readme do Projeto](../Project_MDR/README.md)
 
 ## Diretório Wiki
 
