@@ -29,7 +29,7 @@
 
 1. [About the Project](#1-about-the-project)
 
-    1.1. [1.1. Project's Modules](#11-projects-modules) 
+    1.1. [Project's Modules](#11-projects-modules) 
  
 2. [Documentation](#2-documentation)
 
