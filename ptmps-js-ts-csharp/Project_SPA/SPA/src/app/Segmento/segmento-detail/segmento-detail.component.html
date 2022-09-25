@@ -1,0 +1,45 @@
+<div>
+    <!-- <h2 *ngIf="!criarSegmento">Detalhes do segmento</h2> -->
+    <h2 *ngIf="criarSegmento">Criar segmento</h2>
+    <div>
+        <label>
+            ordem:
+            <input [disabled]="!editable" [(ngModel)]="segmento.ordem" placeholder="segmento.ordem" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Nó Origem:
+            <select *ngIf="criarSegmento" [(ngModel)]="selectNos">
+                <option *ngFor="let no of selectNos">{{no.abreviatura}}</option>
+            </select>
+            <input [disabled]="!editable" *ngIf="!criarSegmento" [(ngModel)]="segmento.noOrigem.abreviatura" 
+            placeholder="segmento.noOrigem.abreviatura" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Nó Destino:
+            <select *ngIf="criarSegmento" [(ngModel)]="selectNos">
+                <option *ngFor="let no of selectNos">{{no.abreviatura}}</option>
+            </select>
+            <input [disabled]="!editable" *ngIf="!criarSegmento" [(ngModel)]="segmento.noDestino.abreviatura"
+                placeholder="segmento.noDestino.abreviatura" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Duração:
+            <input [disabled]="!editable" [(ngModel)]="segmento.duracao" placeholder="segmento.duracao" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Distância:
+            <input [disabled]="!editable" [(ngModel)]="segmento.distancia" placeholder="segmento.distancia" />
+        </label>
+    </div>
+    <!-- <button (click)="goBack()">Voltar</button> -->
+    <!-- <button *ngIf="!criarSegmento" (click)="save()">Alterar</button> -->
+    <button *ngIf="criarSegmento" (click)="create()" class="hot">Criar segmento</button>
+</div>

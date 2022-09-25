@@ -1,0 +1,18 @@
+<div>
+    <div>
+        <label>
+            Nó:
+            <br>
+            <input [disabled]="!editable" [(ngModel)]="passagem.abreviaturaNo" placeholder="No" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Hora Passagem:
+            <p style="color: black">{{timeMask(passagem.horaPassagem)}}</p>
+        </label>
+            
+            <!-- <input [disabled]="!editable" [(ngModel)]="passagem.horaPassagem"
+                placeholder="Hora Passagem" /> -->
+    </div>
+</div>

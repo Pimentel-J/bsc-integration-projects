@@ -1,0 +1,60 @@
+<div>
+    <h2 *ngIf="!criarServicoViatura">Listar Serviço de Viatura</h2>
+    <h2 *ngIf="criarServicoViatura">Criar Serviço de Viatura</h2>
+    <div>
+        <label>
+      ID Serviço:
+      <div *ngIf="criarServicoViatura">
+        <input [(ngModel)]="servicoViatura.id" placeholder="id" />
+      </div>
+      <div *ngIf="!criarServicoViatura">
+        <input [disabled]="!editable" [(ngModel)]="servicoViatura.id" placeholder="id" />
+      </div>
+    </label>
+    </div>
+
+    <div>
+        <button *ngIf="criarServicoViatura" (click)="addViagem()">Adicionar Viagem</button>
+        <p>
+          <label>
+            Viagens:
+          </label>
+        </p>
+        <div class="container" *ngIf="servicoViatura.viagens.length && criarServicoViatura">
+          <ul>
+            <li *ngFor="let viagem of servicoViatura.viagens; let i = index; trackBy:trackByIndex">
+              <select [(ngModel)]="servicoViatura.viagens[i]">
+                <option *ngFor="let vg of selectViagens" [ngValue]="vg.id">
+                  <td class=coluna3> {{vg.descritivo.split('@')[0]}} : </td>
+                  <td class=coluna3>  [{{timeMask(vg.horaInicio)}} - </td>
+                  <td class=coluna3> {{timeMask(vg.horaFim)}}]</td> </option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="container" *ngIf="servicoViatura.viagens.length && !criarServicoViatura">
+          <table>
+            <tbody>
+              <tr>
+                <th>Descritivo</th>
+                <th>Hora Inicio</th>
+                <th>Hora Fim</th>
+              </tr>
+              <tr *ngFor="let vg of selectViagens">
+                <td>{{vg.descritivo.split('@')[0]}}</td>
+                <td>{{timeMask(vg.horaInicio)}}</td>
+                <td>{{timeMask(vg.horaFim)}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p></p>
+        
+    </div>
+
+
+    <button (click)="goBack()">Voltar</button>
+    <!--<button *ngIf="!criarServicoViatura" (click)="save()">Alterar</button>-->
+    <button *ngIf="criarServicoViatura" (click)="create()" class="hot">Criar</button>
+
+</div>

@@ -1,0 +1,73 @@
+<h1><a routerLink="/dashboard">{{title}}</a></h1>
+<div class="navbar">
+  <a routerLink="/dashboard" routerLinkActive="active">Home</a>
+  <div class="dropdown" *ngIf="userInfo && userInfo.dataAdmin" >
+    <button class="dropbtn" [class.active]="rla_nos.isActive||rla_percursos.isActive||rla_linhas.isActive">
+      Rede
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/nos" routerLinkActive="active" #rla_nos="routerLinkActive">Nós</a>
+      <a routerLink="/percursos" routerLinkActive="active" #rla_percursos="routerLinkActive">Percursos</a>
+      <a routerLink="/linhas" routerLinkActive="active" #rla_linhas="routerLinkActive">Linhas</a>
+    </div>
+  </div>
+  <a *ngIf="userInfo && userInfo.cliente"  routerLink="/mapaRede" routerLinkActive="active">Mapa da rede</a>
+  <div class="dropdown" *ngIf="userInfo && userInfo.dataAdmin" >
+    <button class="dropbtn" [class.active]="rla_viaturas.isActive||rla_tipos_viatura.isActive">
+      Viaturas
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/tiposviatura" routerLinkActive="active" #rla_tipos_viatura="routerLinkActive">Tipos Viatura</a>
+      <a routerLink="/viaturas" routerLinkActive="active" #rla_viaturas="routerLinkActive">Viaturas</a>
+    </div>
+  </div>
+  <div class="dropdown" *ngIf="userInfo && userInfo.dataAdmin" >
+    <button class="dropbtn" [class.active]="rla_tripulantes.isActive||rla_tipos_tripulante.isActive">
+      Tripulantes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/tiposTripulante" routerLinkActive="active" #rla_tipos_tripulante="routerLinkActive">Tipos Tripulante</a>
+      <a routerLink="/tripulantes" routerLinkActive="active" #rla_tripulantes="routerLinkActive">Tripulantes</a>
+    </div>
+  </div>
+  <div class="dropdown" *ngIf="userInfo && userInfo.dataAdmin" >
+    <button class="dropbtn" [class.active]="rla_viagens.isActive||rla_servicos_viatura.isActive||rla_blocos.isActive||rla_servicos_tripulante.isActive">
+      Viagens
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/viagens" routerLinkActive="active" #rla_viagens="routerLinkActive">Viagens</a>
+      <a routerLink="/servicosViatura" routerLinkActive="active" #rla_servicos_viatura="routerLinkActive">Serviços Viatura</a>
+      <a routerLink="/blocos" routerLinkActive="active" #rla_blocos="routerLinkActive">Blocos Trabalho</a>
+      <a routerLink="/servicosTripulante" routerLinkActive="active" #rla_servicos_tripulante="routerLinkActive">Serviços Tripulante</a>
+    </div>
+  </div>
+  <div class="dropdown" *ngIf="userInfo && userInfo.dataAdmin" >
+    <button class="dropbtn" [class.active]="rla_algMudMot.isActive||rla_algGenetico.isActive||rla_escalonamento.isActive">
+      Planeamento
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="/algMudMot" routerLinkActive="active" #rla_algMudMot="routerLinkActive">Algoritmo Mudança Motorista</a>
+      <a routerLink="/algGenetico" routerLinkActive="active" #rla_algGenetico="routerLinkActive">Algoritmo Genético</a>
+      <a routerLink="/escalonamento" routerLinkActive="active" #rla_escalonamento="routerLinkActive">Escalonamento</a>
+    </div>
+  </div>
+  <a *ngIf="userInfo && userInfo.dataAdmin" routerLink="/importFile" routerLinkActive="active">Importar dados</a>
+  <div class="dropdown">
+    <button class="dropbtn" >
+      Acesso
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a *ngIf="!userInfo" routerLink="/login">Login</a>
+      <a *ngIf="userInfo" routerLink="/login">Logout</a>
+      <a (click)="direitoAoEsquecimento()">Direito ao esquecimento</a>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<app-messages></app-messages>

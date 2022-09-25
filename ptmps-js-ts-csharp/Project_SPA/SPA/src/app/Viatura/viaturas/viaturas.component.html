@@ -1,0 +1,37 @@
+<h2>Viaturas</h2>
+
+<div>
+    <button routerLink="/viatura">
+    Adicionar Viatura
+  </button>
+    <p></p>
+</div>
+
+<table id="viaturas">
+  <tr>
+    <th>Código</th>
+    <th>Chassis</th>
+    <th>Tipo Viatura</th>
+    <th>Data Entrada Serviço</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor="let viatura of viaturas">
+    <td>
+      <a routerLink="/viaturas/{{viatura.id}}">{{viatura.id}}</a>
+    </td>
+    <td>
+      <a routerLink="/viaturas/{{viatura.id}}">{{viatura.niv}}</a>
+    </td>
+    <td>
+      <a routerLink="/viaturas/{{viatura.id}}">{{viatura.tipoviatura}}</a>
+    </td>
+    <td>
+      <a routerLink="/viaturas/{{viatura.id}}">{{viatura.data_entrada_servico}}</a>
+    </td>
+    <td align="center">
+      <button class="delete" (click)="delete(viatura)">
+        x
+      </button>
+    </td>
+  </tr>
+</table>

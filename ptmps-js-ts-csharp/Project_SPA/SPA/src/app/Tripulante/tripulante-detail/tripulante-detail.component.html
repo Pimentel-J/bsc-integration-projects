@@ -1,0 +1,92 @@
+<!-- Detalhes do Tripulante -->
+
+<div>
+
+  <h2 *ngIf="!criarTripulante">Detalhes do Tripulante</h2>
+  <h2 *ngIf="criarTripulante">Criar Tripulante</h2>
+
+  <div>
+    <label *ngIf="criarTripulante">
+      Número Mecanográfico:
+      <input id="input-geral" [(ngModel)]="tripulante.numeroMecanografico" placeholder="Ex: TRP123456" />
+      <input *ngIf="!criarTripulante" id="input-geral" [(ngModel)]="tripulante.numeroMecanografico"
+        disabled="disabled" />
+    </label>
+    <label *ngIf="!criarTripulante">
+      Número Mecanográfico:
+      <input id="input-geral" [(ngModel)]="tripulante.numeroMecanografico" disabled="disabled" />
+    </label>
+  </div>
+  <span style="color: var(--bege); font-size:smaller;"><i>Sequência alfanumérica de 9 caracteres</i></span>
+
+  <div>
+    <label>Nome:
+      <input id="input-nome" [(ngModel)]="tripulante.nome" placeholder="Nome" />
+    </label>
+  </div>
+
+  <div>
+    <label>Data de Nascimento:
+      <input id="input-geral" [(ngModel)]="tripulante.dataNascimento" placeholder="DD-MM-YYYY" />
+    </label>
+  </div>
+
+  <div>
+    <label>Número Cartão de Cidadão:
+      <input id="input-geral" [(ngModel)]="tripulante.numeroCartaoCidadao" placeholder="Nº CC" />
+    </label>
+  </div>
+
+  <div>
+    <label>NIF:
+      <input id="input-geral" [(ngModel)]="tripulante.nif" placeholder="NIF" />
+    </label>
+  </div>
+  <!-- <span style="color:#ac403e; font-size:smaller;"><i>Sequência de 9 algarismos</i></span> -->
+
+  <div>
+    <label>Número Carta Condução:
+      <input id="input-geral" [(ngModel)]="tripulante.numeroCartaConducao" placeholder="Nº Carta Condução" />
+    </label>
+  </div>
+
+  <div>
+    <label>Data Emissão Licença Condução:
+      <input id="input-geral" [(ngModel)]="tripulante.dataEmissaoLicencaConducao" placeholder="DD-MM-YYYY" />
+    </label>
+  </div>
+
+  <div>
+    <label>Data Validade Licença Condução:
+      <input id="input-geral" [(ngModel)]="tripulante.dataValidadeLicencaConducao" placeholder="DD-MM-YYYY" />
+    </label>
+  </div>
+
+  <div>
+    <label>Tipo de Tripulante:
+      <select [(ngModel)]="tripulante.tipoTripulante">
+        <option *ngFor="let tipoTripulante of tiposTripulante" [value]="tipoTripulante.codigo">{{tipoTripulante.codigo}}
+        </option>
+      </select>
+    </label>
+  </div>
+
+  <div>
+    <label>Data de Entrada na Empresa:
+      <input id="input-geral" [(ngModel)]="tripulante.dataEntradaEmpresa" placeholder="DD-MM-YYYY" />
+    </label>
+  </div>
+
+  <div>
+    <label>Data de Saída na Empresa:
+      <input id="input-geral" [(ngModel)]="tripulante.dataSaidaEmpresa" placeholder="DD-MM-YYYY" />
+    </label>
+  </div>
+  <!-- <span style="color:#ac403e; font-size:smaller;"><i>*Campos de preenchimento obrigatório</i></span> -->
+
+  <p></p>
+  <button (click)="goBack()">Voltar</button>
+  <button *ngIf="!criarTripulante" (click)="save()" class="hot">Alterar</button>
+  <button *ngIf="criarTripulante" (click)="create()" class="hot">Guardar</button>
+
+</div>

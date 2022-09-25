@@ -1,0 +1,38 @@
+<div>
+    <h2>Criar percurso</h2>
+    <div>
+        <label>
+            Cod. Percurso:
+            <input [(ngModel)]="percursoDTO.idPercurso" placeholder="Ex: 21" />
+        </label>
+    </div>
+    <div>
+        <label>
+            Linha:
+            <select [(ngModel)]="percursoDTO.linha">
+                <option *ngFor="let linha of selectLinhas">{{linha.nome}}</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Ida:
+            <input type="checkbox" [(ngModel)]="percursoDTO.ida" placeholder="Ida" />
+        </label>
+    </div>
+    <div>
+        <button (click)="addSegmento()">Adicionar Segmento</button>
+        <h2>Segmentos</h2>
+        <label>
+            <div class="container" *ngIf="percursoDTO.segmentos.length">
+                <ul class="segmentos">
+                    <li *ngFor="let segmento of percursoDTO.segmentos">
+                        <app-segmento-create [segmentoDTO]="segmento"></app-segmento-create>
+                    </li>
+                </ul>
+            </div>
+        </label>
+    </div>
+    <button (click)="goBack()">Voltar</button>
+    <button (click)="create()">Criar percurso</button>
+</div>

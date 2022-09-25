@@ -1,0 +1,31 @@
+<!-- Listagem dos Tripulantes -->
+
+<h2>Tripulantes</h2>
+
+<div>
+  <button routerLink="/tripulante">
+    Adicionar Tripulante
+  </button>
+  <p></p>
+</div>
+
+<table id="tripulantes">
+  <tr>
+    <th>Nr. Mecanográfico</th>
+    <th>Nome</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor="let tripulante of tripulantes">
+    <td>
+      <a routerLink="/tripulantes/{{tripulante.numeroMecanografico}}">{{tripulante.numeroMecanografico}}</a>
+    </td>
+    <td>
+      <a routerLink="/tripulantes/{{tripulante.numeroMecanografico}}">{{tripulante.nome}}</a>
+    </td>
+    <td align="center">
+      <button class="delete" (click)="delete(tripulante)">
+        x
+      </button>
+    </td>
+  </tr>
+</table>

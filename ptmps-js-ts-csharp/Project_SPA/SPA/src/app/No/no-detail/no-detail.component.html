@@ -1,0 +1,51 @@
+<div>
+  <h2 *ngIf="!criarNo">Detalhes do nó</h2>
+  <h2 *ngIf="criarNo">Criar nó</h2>
+  <div>
+    <label>
+      Abreviatura:
+      <input [(ngModel)]="no.abreviatura" placeholder="no.abreviatura" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Nome:
+      <input [(ngModel)]="no.nome" placeholder="no.nome" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Latitude:
+      <input [(ngModel)]="no.latitude" placeholder="no.latitude" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Longitude:
+      <input [(ngModel)]="no.longitude" placeholder="no.longitude" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Estação de Recolha?:
+      <input type="checkbox" [(ngModel)]="no.estacaoRecolha" placeholder="no.estacaoRecolha" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Ponto de Rendição?:
+      <input type="checkbox" [(ngModel)]="no.pontoRendicao" placeholder="no.pontoRendicao" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Modelo 3D (mapa):
+      <select [(ngModel)]="no.modeloMapa">
+        <option *ngFor="let nome of selectModelosMapa">{{nome}}</option>
+      </select>
+    </label>
+  </div>
+  <button (click)="goBack()">Voltar</button>
+  <button *ngIf="!criarNo" (click)="save()" class="hot">Alterar</button>
+  <button *ngIf="criarNo" (click)="create()" class="hot">Criar nó</button>
+</div>

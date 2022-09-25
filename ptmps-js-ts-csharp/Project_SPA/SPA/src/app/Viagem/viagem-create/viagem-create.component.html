@@ -1,0 +1,43 @@
+<div>
+    <h2>Criar Viagens</h2>
+    <div>
+        <label>
+            Hora Inicio:
+            <p style="color: black">
+            <input [(ngModel)]="creatingViagemDTO.HoraInicio" (keyup)="refreshHoraInicial()" placeholder="Ex: 36000 seg. => 10h00" />
+            {{horaInicialFormatada}}</p>
+        </label>
+    </div>
+    <div>
+        <label>
+            Percurso Ida:
+            <select (change)="onChange($event.target.value)" [(ngModel)]="creatingViagemDTO.PercursoIdaId">
+                <option *ngFor="let p of selectPercursosIda">{{p.idPercurso}}</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Percurso Volta:
+            <select [(ngModel)]="creatingViagemDTO.PercursoVoltaId">
+                <option *ngFor="let pe of selectPercursosVolta">{{pe.idPercurso}}</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Frequencia:
+            <p style="color: black">
+            <input [(ngModel)]="creatingViagemDTO.Frequencia" (keyup)="refreshFrequencia()" placeholder="Ex 1800 seg. => 30 min." />
+            {{frequenciaFormatada}}</p>
+        </label>
+    </div>
+    <div>
+        <label>
+            Número Viagens:
+            <input [(ngModel)]="creatingViagemDTO.NViagens" placeholder="Número Viagens" />
+        </label>
+    </div>
+    <button (click)="goBack()">Voltar</button>
+    <button (click)="create()" class="hot">Criar Viagens</button>
+</div>

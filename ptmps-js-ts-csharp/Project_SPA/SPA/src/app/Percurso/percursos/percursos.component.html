@@ -1,0 +1,51 @@
+<h2>Percursos da rede</h2>
+
+<div>
+  <button routerLink="/percurso" class="hot">
+    Adicionar Percurso
+  </button>
+</div>
+<div>
+  <label>
+    Linha:
+    <!-- <select ng-model="selectedLinha" ng-options="linha.codigo for linha in selectLinhas"> -->
+      <select (change)="onChange($event.target.value)" [(ngModel)]="linha">
+        <option *ngFor="let linha of linhas" [value]="linha.codigo">{{linha.nome}}</option>
+      </select>
+    <!-- </select> -->
+  </label>
+</div>
+<div>
+  <br>  
+</div>
+<table id="percursos">
+  <tr>
+    <th>Linha</th>
+    <th>Código Percurso</th>
+    <th>Ida?</th>
+    <!--<th>Remover</th>-->
+  </tr>
+  <tr *ngFor="let percurso of percursos">
+    <td>
+      <a routerLink="/percursos/{{percurso.idPercurso}}">{{percurso.idLinha.nome}}</a>
+    </td>
+    <td>
+      <a routerLink="/percursos/{{percurso.idPercurso}}">{{percurso.idPercurso}}</a>
+    </td>
+    <td [ngStyle]="{
+                  color: percurso.ida
+                    ? 'hsl(141, 53%, 53%)'
+                    : 'hsl(348, 100%, 61%)'
+                }">
+      <b>{{ percurso.ida | simNao }}</b>
+    </td>
+    <!-- <td>
+      <a routerLink="/percursos/{{percurso.idPercurso}}">{{percurso.ida ? 'Sim' : 'Não' }</a>
+    </td> -->
+    <!--td align="center">
+      <button class="delete" (click)="delete(no)">
+        x
+      </button>
+    </td>-->
+  </tr>
+</table>

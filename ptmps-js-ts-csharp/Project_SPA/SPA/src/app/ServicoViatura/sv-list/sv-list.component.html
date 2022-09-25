@@ -1,0 +1,29 @@
+<h2>Serviços de Viatura</h2>
+
+<div>
+    <button routerLink="/servicoViatura">
+    Adicionar Serviço de Viatura
+  </button>
+    <p></p>
+</div>
+
+<table id="svs">
+  <tr>
+    <th>Código</th>
+    <th>Nr. Viagens</th>
+    <!--<th>--><!--Remover--><!--</th>-->
+  </tr>
+  <tr *ngFor="let servicoViatura of servicosViatura">
+    <td>
+      <a routerLink="/servicosViatura/{{servicoViatura.id}}">{{servicoViatura.id}}</a>
+    </td>
+    <td>
+      <a routerLink="/servicosViatura/{{servicoViatura.id}}">Viagens: {{servicoViatura.viagens.length}}</a>
+    </td>
+    <!--<td align="center">
+      <button class="delete" (click)="delete(no)">
+        x
+      </button>
+    </td>-->
+  </tr>
+</table>

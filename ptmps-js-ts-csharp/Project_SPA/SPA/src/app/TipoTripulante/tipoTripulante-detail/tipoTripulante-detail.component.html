@@ -1,0 +1,27 @@
+<!-- Detalhes dos Tipos de Tripulante -->
+
+<div>
+
+  <h2 *ngIf="!criarTipoTripulante">Detalhes do Tipo de Tripulante</h2>
+  <h2 *ngIf="criarTipoTripulante">Criar Tipo de Tripulante</h2>
+
+  <div>
+    <label>
+      Código:
+      <input id="input-codigo" [(ngModel)]="tipoTripulante.codigo" placeholder="Ex: PTESP" />
+    </label>
+  </div>
+
+  <div>
+    <label>Descrição:
+      <textarea id="input-descricao" [(ngModel)]="tipoTripulante.descricao"
+        placeholder="Ex: Motorista senior com espanhol fluente"> </textarea>
+    </label>
+  </div>
+  <span style="color: var(--bege); font-size: smaller;"><i>Ambos os campos são obrigatórios</i></span>
+  <p></p>
+  <button (click)="goBack()">Voltar</button>
+  <button *ngIf="!criarTipoTripulante" (click)="save()" class="hot">Alterar</button>
+  <button *ngIf="criarTipoTripulante" (click)="create()" class="hot">Guardar</button>
+
+</div>

@@ -1,0 +1,30 @@
+<!-- Detalhes dos Serviços de Tripulante -->
+
+<div>
+
+  <h2 *ngIf="!criarServicoTripulante">Detalhes do Serviço de Tripulante</h2>
+  <h2 *ngIf="criarServicoTripulante">Criar Serviço de Tripulante</h2>
+
+  <div>
+    <label>
+      Código:
+      <input *ngIf="criarServicoTripulante" id="input-codigo" [(ngModel)]="servicoTripulante.codigoServicoTripulante"
+        placeholder="Ex: ST105TP500" />
+      <input *ngIf="!criarServicoTripulante" id="input-codigo" [(ngModel)]="servicoTripulante.codigoServicoTripulante"
+        disabled="disabled" />
+    </label>
+  </div>
+  <span style="color: var(--bege); font-size:smaller;"><i>Sequência alfanumérica de 10 caracteres</i></span>
+
+  <!-- <div>
+    <label>Descrição:
+      <textarea id="input-descricao" [(ngModel)]="servicoTripulante.descricao"
+        placeholder="Ex: Motorista senior com espanhol fluente"> </textarea>
+    </label>
+  </div> -->
+  <p></p>
+  <button (click)="goBack()">Voltar</button>
+  <!-- <button *ngIf="!criarServicoTripulante" (click)="save()" class="hot">Alterar</button> -->
+  <button *ngIf="criarServicoTripulante" (click)="create()" class="hot">Guardar</button>
+
+</div>

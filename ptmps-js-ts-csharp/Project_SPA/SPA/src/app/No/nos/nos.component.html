@@ -1,0 +1,28 @@
+<h2>Nós da rede</h2>
+
+<div>
+  <button routerLink="/no">
+    Adicionar nó
+  </button>
+</div>
+
+<table id="nos">
+  <tr>
+    <th>Código</th>
+    <th>Nome</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor="let no of nos">
+    <td>
+      <a routerLink="/nos/{{no.abreviatura}}">{{no.abreviatura}}</a>
+    </td>
+    <td>
+      <a routerLink="/nos/{{no.abreviatura}}">{{no.nome}}</a>
+    </td>
+    <td align="center">
+      <button class="delete" (click)="delete(no)">
+        x
+      </button>
+    </td>
+  </tr>
+</table>

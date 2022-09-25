@@ -1,0 +1,31 @@
+<!-- Listagem dos Tipos de Tripulante -->
+
+<h2>Tipos de Tripulante</h2>
+
+<div>
+  <button routerLink="/tipoTripulante">
+    Adicionar Tipo de Tripulante
+  </button>
+  <p></p>
+</div>
+
+<table id="tiposTripulante">
+  <tr>
+    <th>Código</th>
+    <th>Descrição</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor="let tipoTripulante of tiposTripulante">
+    <td>
+      <a routerLink="/tiposTripulante/{{tipoTripulante.codigo}}">{{tipoTripulante.codigo}}</a>
+    </td>
+    <td>
+      <a routerLink="/tiposTripulante/{{tipoTripulante.codigo}}">{{tipoTripulante.descricao}}</a>
+    </td>
+    <td align="center">
+      <button class="delete" (click)="delete(tipoTripulante)">
+        x
+      </button>
+    </td>
+  </tr>
+</table>

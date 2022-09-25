@@ -1,0 +1,71 @@
+<div class="card">
+    <h4 class="card-header">Registo - É necessário ler a totalidade da Política de Privacidade e Permissões para Tratamento de Dados</h4>
+    <div class="card-body">
+        <iframe id="user-license" #iframe style="overflow:hidden;height:300px;width:100%" height="300px" width="100%"
+            frameborder="0" wmode="transparent"></iframe>
+            
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          
+            <div class="form-group">
+              <br />
+                <label for="firstName">Nome Próprio</label>
+                <input type="text" formControlName="firstName" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                    <div *ngIf="f.firstName.errors.required">Nome próprio é obrigatório</div>
+                </div>
+            </div>
+            <div class="form-group">
+              <br />
+                <label for="lastName">Apelido</label>
+                <input type="text" formControlName="lastName" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastName.errors.required">Apelido é obrigatório</div>
+                </div>
+            </div>
+            <div class="form-group">
+              <br />
+              <label for="lastName">Email</label>
+              <input type="text" formControlName="email" class="form-control"
+                     [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email é obrigatório</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <br />
+              <label for="username">Username</label>
+              <input type="text" formControlName="username" class="form-control"
+                     [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+              <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                <div *ngIf="f.username.errors.required">Username é obrigatório</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <br />
+              <label for="password">Password</label>
+              <input type="password" formControlName="password" class="form-control"
+                     [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+              <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required">Password é obrigatória</div>
+                <div *ngIf="f.password.errors.minlength">Password tem que ter mínimo de 6 caracteres</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <br />
+              <a routerLink="../login"><button class="btn btn-link">Cancelar</button></a>
+              <button [disabled]="!enabledAgreement" class="hot">
+                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                Registar
+              </button>
+            </div>
+        </form>
+        <div>
+          <label style="width:90%">
+            Aceita a Política de Privacidade e dá consentimento para o tratamento dos seus dados pessoais?
+            <input *ngIf="enableAccept" type="checkbox" [(ngModel)]="enabledAgreement" />
+          </label>
+        </div>
+    </div>
+</div>

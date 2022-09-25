@@ -1,0 +1,65 @@
+<div>
+  <h2 *ngIf="!criarLinha">Detalhes da linha</h2>
+  <h2 *ngIf="criarLinha" >Criar linha</h2>
+  <div>
+    <label>
+      Codigo:
+      <input [(ngModel)]="linha.codigo" placeholder="" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Nome:
+      <input [(ngModel)]="linha.nome" placeholder="" />
+    </label>
+  </div>
+  <!--<div>
+    <label>
+      Permissoes_Atuais_Viaturas:
+
+      <ul class="linhas">
+        <li *ngFor="let permissoes of permissoesViaturas">
+          <a>
+            <span class="badge">{{permissoes.codigo}}</span>
+          </a>
+        </li>
+      </ul>
+
+    </label>
+  </div>
+  <div>
+    <label>
+      Permissoes_Viaturas:
+      <input [(ngModel)]="linha.permissaoViatura" placeholder="" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Permissoes_Atuais_Motoristas:
+
+      <ul class="linhas">
+        <li *ngFor="let permissoes2 of permissoesMotoristas">
+          <a>
+            <span class="badge">{{permissoes2.codigo}}</span>
+          </a>
+        </li>
+      </ul>
+
+    </label>
+  </div>
+  <div>
+    <label>
+      Permissões_Motorista:
+      <input [(ngModel)]="linha.permissaoMotorista" placeholder="" />
+    </label>
+  </div>-->
+  <div>
+    <label>
+      Cor da linha:
+      <input [(ngModel)]="linha.cor" placeholder="" />
+    </label>
+  </div>
+  <button (click)="goBack()">Voltar</button>
+  <button *ngIf="!criarLinha" (click)="save()" class="hot">Alterar</button>
+  <button *ngIf="criarLinha" (click)="create()" class="hot">Criar linha</button>
+</div>

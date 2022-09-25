@@ -1,0 +1,31 @@
+<!-- Listagem dos Serviços de Tripulante -->
+
+<h2>Serviços de Tripulante</h2>
+
+<div>
+  <button routerLink="/servicoTripulante">
+    Adicionar Serviço de Tripulante
+  </button>
+  <p></p>
+</div>
+
+<table id="servicosTripulante">
+  <tr>
+    <th>Código</th>
+    <!-- <th>Descrição</th> -->
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor="let servicoTripulante of servicosTripulante">
+    <td>
+      <a routerLink="/servicosTripulante/{{servicoTripulante.codigoServicoTripulante}}">{{servicoTripulante.codigoServicoTripulante}}</a>
+    </td>
+    <!-- <td>
+      <a routerLink="/servicosTripulante/{{servicoTripulante.codigoServicoTripulante}}">{{servicoTripulante.descricao}}</a>
+    </td> -->
+    <td align="center">
+      <button class="delete" (click)="delete(servicoTripulante)">
+        x
+      </button>
+    </td>
+  </tr>
+</table>

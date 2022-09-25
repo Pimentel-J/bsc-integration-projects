@@ -1,0 +1,35 @@
+<div>
+    <h2 *ngIf="!criarViatura">Detalhes do Viatura</h2>
+    <h2 *ngIf="criarViatura">Criar Viatura</h2>
+    <div>
+        <label>
+        Matricula:
+        <input [(ngModel)]="viatura.id" placeholder="" />
+      </label>
+    </div>
+    <div>
+        <label>
+          N I V:
+          <input [(ngModel)]="viatura.niv" placeholder="" />
+        </label>
+    </div>
+    <div>
+        <label>
+          Tipo Viatura:
+          <input *ngIf="!criarViatura" [(ngModel)]="viatura.tipoviatura" placeholder="viatura.tipoviatura" />
+          <select *ngIf="criarViatura" [(ngModel)]="viatura.tipoviatura">
+              <option *ngFor="let tipoviatura of selectTpv" [value]="tipoviatura.codigo">{{tipoviatura.codigo}} </option>
+          </select>
+        </label>
+    </div>
+    <div>
+        <label>
+        Data Entrada Serviço:
+        <input [(ngModel)]="viatura.data_entrada_servico" placeholder="DD-MM-YYYY"/>
+      </label>
+    </div>
+
+    <button (click)="goBack()">Voltar</button>
+    <button *ngIf="!criarViatura" (click)="save()" class="hot">Alterar</button>
+    <button *ngIf="criarViatura" (click)="create()" class="hot">Criar</button>
+</div>

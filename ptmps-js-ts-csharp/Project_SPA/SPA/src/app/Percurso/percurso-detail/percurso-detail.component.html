@@ -1,0 +1,44 @@
+<div>
+  <h2 *ngIf="!criarPercurso">Detalhes do percurso</h2>
+
+  <h2 *ngIf="criarPercurso">Criar percurso</h2>
+  <div>
+    <label>
+      Cod. Percurso:
+      <input [disabled]="!editable" [(ngModel)]="percurso.idPercurso" placeholder="idPercurso" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Linha:
+      <input [disabled]="!editable" [(ngModel)]="percurso.idLinha.nome" placeholder="Linha" />
+      <!-- <select ng-model="selectedLinha" ng-options="linha.codigo for linha in selectLinhas"> -->
+        <!-- <select *ngIf="criarPercurso" [(ngModel)]="idLinha">
+          <option *ngFor="let linha of selectLinhas">{{linha.nome}}</option>
+        </select> -->
+      <!-- </select> -->
+    </label>
+  </div>
+  <div>
+    <label>
+      Ida:
+      <input [disabled]="!editable" type="checkbox" [(ngModel)]="percurso.ida" placeholder="percurso.ida" />
+    </label>
+  </div>
+  <div>
+    <!-- <button *ngIf="criarPercurso" (click)="addSegmento()">Adicionar Segmento</button> -->
+    <h2>Segmentos</h2>
+    <label>
+      <div class="container" *ngIf="percurso.segmentos.length">
+      <ul class="segmentos">
+        <li *ngFor="let segmento of percurso.segmentos">
+          <app-segmento-detail [segmento]="segmento"></app-segmento-detail>
+        </li>
+      </ul>
+      </div>
+    </label>
+  </div>
+  <button (click)="goBack()">Voltar</button>
+  <!-- <button *ngIf="!criarPercurso" (click)="save()">Alterar</button> -->
+  <button *ngIf="criarPercurso" (click)="create()" class="hot">Criar percurso</button>
+</div>

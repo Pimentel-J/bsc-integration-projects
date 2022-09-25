@@ -1,0 +1,78 @@
+<div>
+  <h2 *ngIf="!criarBloco">Detalhes do bloco</h2>
+  <h2 *ngIf="criarBloco">Criar bloco</h2>
+  <div>
+    <label>
+      Código:
+      <input [(ngModel)]="bloco.codigo" placeholder="" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Hora de Início:
+      <input [(ngModel)]="bloco.startTime" placeholder="" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Hora Fim:
+      <input [(ngModel)]="bloco.endTime" placeholder="" />  
+    </label>
+  </div>
+  
+  <!--<div>
+    <label>
+      servicoMotorista:
+      <input [(ngModel)]="bloco.servicoMotoristaId" placeholder="" />
+    </label>
+  </div>-->
+  <!--<div>
+    <button (click)="addServico()">Adicionar ServicoViatura</button>
+  </div>-->
+  <div>  
+    <label>
+      Código Serviço Viatura:
+      <div *ngIf="criarBloco">
+        <select (change)="onChange($event.target.value)" [(ngModel)]="bloco.servicoViaturaId" placeholder="servicoViatura">
+          <option *ngFor="let servicoViatura of selectServicoViatura" [value]="servicoViatura.id">{{servicoViatura.id}}</option>
+        </select>
+      </div>
+      <div *ngIf="!criarBloco">
+        <select [disabled]="!editable" (change)="onChange($event.target.value)" [(ngModel)]="bloco.servicoViaturaId" placeholder="servicoViatura">
+          <option *ngFor="let servicoViatura of selectServicoViatura" [value]="servicoViatura.id">{{servicoViatura.id}}</option>
+        </select>
+      </div>
+    </label>
+</div>
+<div>
+  <button *ngIf="criarBloco" (click)="addViagem()">Adicionar Viagem</button>
+  <p>
+    <label>
+      Viagens:
+      <div class="container" *ngIf="bloco.viagens.length && criarBloco">
+        <ul>
+          <li *ngFor="let viagem of bloco.viagens; let i = index; trackBy:trackByIndex">
+            <select [(ngModel)]="bloco.viagens[i]">
+              <option *ngFor="let vg of selectViagens" [ngValue]="vg.id"> {{vg.descritivo}}-{{vg.horaFim}}</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      <div class="container" *ngIf="bloco.viagens.length && !criarBloco">
+        <ul>
+          <li *ngFor="let viagem of bloco.viagens; let i = index; trackBy:trackByIndex">
+            <select [disabled]="!editable" [(ngModel)]="bloco.viagens[i]">
+              <option *ngFor="let vg of selectViagens" [ngValue]="vg.id"> {{vg.descritivo}}-{{vg.horaFim}}</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </label>
+  </p>
+
+
+</div>
+  <button (click)="goBack()">Voltar</button>
+  <button *ngIf="!criarBloco" (click)="save()" class="hot">Alterar</button>
+  <button *ngIf="criarBloco" (click)="create()" class="hot">Criar bloco</button>
+</div>

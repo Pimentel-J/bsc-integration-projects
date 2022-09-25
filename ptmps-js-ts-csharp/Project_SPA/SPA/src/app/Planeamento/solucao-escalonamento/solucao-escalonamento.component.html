@@ -1,0 +1,77 @@
+<h2>Planeamento</h2>
+<h3>Escalonamento - atribuição de serviços de tripulante a blocos de trabalho</h3>
+<ngx-spinner bdColor="rgba(1,1,1,0)"
+             size="medium"
+             color="#fff">
+  <p style="font-size: 20px; text-align:center"><img src="assets/spinner.gif" /></p>
+  <p style="font-size: 20px; color: black; text-align:center">A calcular...</p>
+</ngx-spinner>
+<div>
+  <p>
+    Número de gerações:
+    <input [(ngModel)]="input.numeroGeracoes" placeholder="ex: 100" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Tamanho da população:
+    <input [(ngModel)]="input.tamanhoPopulacao" placeholder="ex: 5" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Probabilidade de cruzamento (%):
+    <input [(ngModel)]="input.probCruzamento" placeholder="ex: 75" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Probabilidade de mutação (%):
+    <input [(ngModel)]="input.probMutacao" placeholder="ex: 25" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Taxa de preservação (%):
+    <input [(ngModel)]="input.taxaPreservacao" placeholder="ex: 30" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Número de gerações iguais até estagnar:
+    <input [(ngModel)]="input.numeroGeracoesEstagnacao" placeholder="ex: 0" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Valor do custo alvo (até parar):
+    <input [(ngModel)]="input.valorAlvo" placeholder="ex: 0" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Tempo limite do algoritmo:
+    <input [(ngModel)]="input.tempoLimite" placeholder="ex: 0" />
+    {{horaInicialFormatada}}
+  </p>
+</div>
+<div style="margin-top:25px">
+  <button (click)="geraSolucoes()">Gerar solução</button>
+</div>
+<div *ngIf="solucao.escalonamento">
+
+  <div *ngIf="solucao.escalonamento.length > 0">
+    <p><b>Escalonamento</b>:</p>
+    <ul>
+      <li *ngFor="let servicoTripulante of solucao.escalonamento">
+        {{servicoTripulante.servicoTripulante}}
+        <ul>
+          <li *ngFor="let bloco of servicoTripulante.blocos">
+            {{bloco}}
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p><b>Custo</b>: {{solucao.alertas}}</p>
+  </div>
+  <div *ngIf="solucao.escalonamento.length == 0" style="color:darkred">
+    <p><b>Sem solução.</b></p>
+  </div>
+
+
+</div>
+
+

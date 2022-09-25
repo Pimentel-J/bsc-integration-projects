@@ -1,0 +1,171 @@
+[{
+        "_id": "5fa5c2ee66af715f643a403a",
+        "abreviatura": "AGUIA",
+        "nome": "Aguiar de Sousa",
+        "latitude": 41.1293363229325,
+        "longitude": -8.4464785432391,
+        "estacaoRecolha": false,
+        "pontoRendicao": false,
+        "__v": 0
+    },
+    {
+        "_id": "5fb0f6197d5b566f9ca3892a",
+        "abreviatura": "BALTR",
+        "nome": "Baltar",
+        "latitude": 41.1937898023744,
+        "longitude": -8.38716802227697,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fb17c97b65ebf5228642e00",
+        "abreviatura": "BESTR",
+        "nome": "Besteiros",
+        "latitude": 41.217018845589,
+        "longitude": -8.34043029659082,
+        "estacaoRecolha": false,
+        "pontoRendicao": false,
+        "__v": 0
+    },
+    {
+        "_id": "5fb1a3dc0c51884714fd8021",
+        "abreviatura": "CETE",
+        "nome": "Cete",
+        "latitude": 41.183243425797,
+        "longitude": -8.35164059584564,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fb50cb62a8713002471e2ce",
+        "abreviatura": "CRIST",
+        "nome": "Cristelo",
+        "latitude": 41.2207801252676,
+        "longitude": -8.34639896125324,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fb58370d0b2ea4900a43323",
+        "abreviatura": "DIGRJ",
+        "nome": "Duas Igrejas",
+        "latitude": 41.2278665802794,
+        "longitude": -8.35481024956726,
+        "estacaoRecolha": false,
+        "pontoRendicao": false,
+        "__v": 0
+    },
+    {
+        "_id": "5fb58402d0b2ea4900a43325",
+        "abreviatura": "ESTLO",
+        "nome": "Estação (Lordelo)",
+        "latitude": 41.2521157104055,
+        "longitude": -8.4227924957086,
+        "estacaoRecolha": true,
+        "pontoRendicao": false,
+        "__v": 0
+    },
+    {
+        "_id": "5fb925530d6cf433fc388439",
+        "abreviatura": "ESTPA",
+        "nome": "Estação (Paredes)",
+        "latitude": 41.2082119860192,
+        "longitude": -8.33448520831829,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fbae933cb53054a30ab3670",
+        "abreviatura": "GAND",
+        "nome": "Gandra",
+        "latitude": 41.1956579348384,
+        "longitude": -8.43958765792976,
+        "estacaoRecolha": false,
+        "pontoRendicao": false,
+        "__v": 0
+    },
+    {
+        "_id": "5fc535412ec7591f00c67367",
+        "abreviatura": "LORDL",
+        "nome": "Lordelo",
+        "latitude": 41.2452627470645,
+        "longitude": -8.42293614720057,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fc5355d2ec7591f00c67368",
+        "abreviatura": "MOURZ",
+        "nome": "Mouriz",
+        "latitude": 41.1983610215263,
+        "longitude": -8.36577272258403,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fc5357a2ec7591f00c67369",
+        "abreviatura": "PARAD",
+        "nome": "Parada de Todeia",
+        "latitude": 41.1765780321068,
+        "longitude": -8.37023578802149,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fc535932ec7591f00c6736a",
+        "abreviatura": "PARED",
+        "nome": "Paredes",
+        "latitude": 41.2062947118362,
+        "longitude": -8.33566951069481,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fc535ad2ec7591f00c6736b",
+        "abreviatura": "RECAR",
+        "nome": "Recarei",
+        "latitude": 41.1599363478137,
+        "longitude": -8.42215867462191,
+        "estacaoRecolha": false,
+        "pontoRendicao": false,
+        "__v": 0
+    },
+    {
+        "_id": "5fc535d42ec7591f00c6736d",
+        "abreviatura": "SOBRO",
+        "nome": "Sobrosa",
+        "latitude": 41.2557331783506,
+        "longitude": -8.38118071581788,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fc535ec2ec7591f00c6736e",
+        "abreviatura": "VANDO",
+        "nome": "Vandoma",
+        "latitude": 41.2328015719913,
+        "longitude": -8.34160692293342,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    },
+    {
+        "_id": "5fc536052ec7591f00c6736f",
+        "abreviatura": "VCCAR",
+        "nome": "Vila Cova de Carros",
+        "latitude": 41.2090666564063,
+        "longitude": -8.35109395257277,
+        "estacaoRecolha": false,
+        "pontoRendicao": true,
+        "__v": 0
+    }
+]

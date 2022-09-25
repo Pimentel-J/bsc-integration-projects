@@ -1,0 +1,64 @@
+<div>
+  <h2>Criar Bloco de Trabalho</h2>
+  <div>
+    <p>
+      <label>
+        Código:
+        <input [(ngModel)]="bloco.codigo" placeholder="no.codigo" />
+      </label>
+    </p>
+    <label>
+      Serviço Viatura:
+      <select [(ngModel)]="bloco.servicoViaturaId" (change)="changeSV($event.target.value)">
+        <option *ngFor="let servicoViatura of selectServicoViatura" [value]="servicoViatura.id">{{servicoViatura.id}}</option>
+      </select>
+    </label>
+    <p>
+      <button (click)="addViagem()">Adicionar Viagem</button>
+    </p>
+    <p>
+      <label>
+        Viagens:
+      </label>
+    </p>
+    <div class="container" *ngIf="bloco.viagens.length">
+      <ul>
+        <li *ngFor="let viagem of bloco.viagens; let i = index; trackBy:trackByIndex">
+          <select [(ngModel)]="bloco.viagens[i]" (change)="changeViagens()">
+            <option *ngFor="let vg of selectViagens" [ngValue]="vg.id">
+              <td class=coluna3> {{vg.descritivo.split('@')[0]}} : </td>
+              <td class=coluna3>  [{{timeMask(vg.horaInicio)}} - </td>
+              <td class=coluna3> {{timeMask(vg.horaFim)}}]</td>
+            </option>
+          </select>
+        </li>
+      </ul>
+    </div>
+    <p>
+      <label>
+        Hora início:
+        <select [(ngModel)]="bloco.startTime">
+          <option *ngFor="let passagem of selectPassagensIniciais" [value]="passagem.horaPassagem">
+            <td class=coluna3> {{timeMask(passagem.horaPassagem)}} - </td>
+            <td class=coluna3>  {{passagem.abreviaturaNo}}</td>
+          </option>
+        </select>
+      </label>
+    </p>
+    <p>
+      <label>
+        Hora fim:
+        <select [(ngModel)]="bloco.endTime">
+          <option *ngFor="let passagem of selectPassagensFinal" [value]="passagem.horaPassagem">
+            <td class=coluna3> {{timeMask(passagem.horaPassagem)}} - </td>
+            <td class=coluna3>  {{passagem.abreviaturaNo}}</td>
+          </option>
+        </select>
+      </label>
+    </p>
+
+  </div>
+  <div>
+    <button (click)="goBack()">Voltar</button>
+    <button (click)="create()" class="hot">Criar bloco</button>
+  </div>

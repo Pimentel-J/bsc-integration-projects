@@ -1,0 +1,236 @@
+/* Global Styles */
+
+:root {
+  --vermelho: #E5474B;
+  --preto: #1C1C1C;
+  --bege: #cb857e;
+  --cinzaEscuro: #444;
+  --cinzaClaro: #e7e7e7;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: var(--vermelho);
+  font-size: 250%;
+}
+
+  h1 a {
+    color: var(--vermelho);
+    text-decoration: none;
+  }
+
+    h1 a:visited, a:link {
+      color: var(--vermelho);
+    }
+
+    h1 a:hover {
+      color: #cb857e;
+      background-color: #ffffff;
+    }
+
+    h1 a.active {
+      color: var(--vermelho);
+    }
+
+h2, h3 {
+  color: #444;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+body, input[text], button {
+  color: #333;
+  font-family: Cambria, Georgia;
+}
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+/*button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  
+}*/
+/*button:hover {
+  background-color: #cfd8dc;
+}*/
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid var(--preto);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  button:hover {
+    background-color: var(--preto);
+    color: white;
+  }
+
+.delete {
+  border: 2px solid var(--cinzaClaro);
+  color: var(--cinzaClaro);
+  padding: 4px 8px;
+}
+
+  .delete:hover {
+    background-color: var(--vermelho);
+  }
+
+.hot {
+  border: 2px solid var(--vermelho);
+}
+
+  .hot:hover {
+    background-color: var(--vermelho);
+    color: white;
+  }
+
+
+
+
+/* Navigation link styles */
+.navbar {
+  overflow: hidden;
+  background-color: var(--preto);
+}
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+.dropbtn.active {
+  background-color: var(--vermelho);
+}
+
+  .navbar a:hover, a.active, .dropdown:hover .dropbtn {
+    background-color: var(--vermelho);
+  }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--cinzaClaro);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* LISTS */
+
+
+table {
+    margin-top: 20px;
+  border-collapse: collapse;
+  /*width: 100%;*/
+}
+
+   table td, table th {
+    border: 1px solid var(--cinzaClaro);
+    padding: 8px;
+  }
+
+    table td a:visited, table td a:link {
+      text-decoration: none;
+      color: var(--preto);
+    }
+
+  /*table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }*/
+  table tr {
+    transition-duration: 0.4s;
+  }
+    table tr:hover {
+      background-color: var(--cinzaClaro);
+    }
+
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--vermelho);
+    color: white;
+  }
+
+
+  /* DETAIL FORM */
+
+label {
+  display: inline-block;
+  width: 5em;
+  margin: .5em 0;
+  color: var(--vermelho);
+  font-weight: bold;
+}
+
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}

@@ -1,0 +1,29 @@
+<div>
+  <div>
+    <label>
+      Descritivo:
+      <input [disabled]="!editable" [(ngModel)] ="viagem.descritivo.split('@')[0]" placeholder="Descritivo" />
+    </label>
+  </div>
+  <div>
+    <label>
+      Codigo Percurso:
+      <input [disabled]="!editable" [(ngModel)]="viagem.percursoId" placeholder="Cod. Percurso" />
+    </label>
+  </div>
+  <div>
+    <h2 style="color:#ac403e">Passagens</h2>
+    <label>
+      <div class="container" *ngIf="selectPassagens.length">
+      <ul class="passagens">
+        <li *ngFor="let passagem of selectPassagens">
+          <p>
+          <app-passagem-detail [passagem]="passagem"></app-passagem-detail>
+          </p>
+        </li>
+      </ul>
+      </div>
+    </label>
+  </div>
+  <button (click)="goBack()">Voltar</button>
+</div>

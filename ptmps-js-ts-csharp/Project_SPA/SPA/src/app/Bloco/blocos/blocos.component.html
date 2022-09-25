@@ -1,0 +1,28 @@
+<h2>Blocos de Trabalho</h2>
+
+<div>
+  <button routerLink="/bloco">
+    Add
+  </button>
+</div>
+
+<table id="blocos">
+  <tr>
+    <th>Código Bloco</th>
+    <th>Serviço Viatura</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor="let bloco of blocos">
+    <td>
+      <a routerLink="/blocos/{{bloco.codigo}}">{{bloco.codigo}}</a>
+    </td>
+    <td>
+      <a routerLink="/blocos/{{bloco.codigo}}">{{"Serviço : "+bloco.servicoViaturaId}}</a>
+    </td>
+    <td align="center">
+      <button class="delete" (click)="delete(bloco)">
+        x
+      </button>
+    </td>
+  </tr>
+</table>

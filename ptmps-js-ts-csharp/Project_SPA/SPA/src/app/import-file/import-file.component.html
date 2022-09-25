@@ -1,0 +1,18 @@
+<div>
+  <h2 style="color:#ac403e">Importar ficheiro</h2>
+  <ngx-spinner bdColor="rgba(1,1,1,0)"
+               size="medium"
+               color="#fff">
+    <p style="font-size: 20px; text-align:center"><img src="assets/spinner.gif" /></p>
+    <p style="font-size: 20px; color: black; text-align:center">A importar dados (~ 2min)...</p>
+  </ngx-spinner>
+  <div>
+    <label>
+      Escolher ficheiro .glx:
+      <!--<input [(ngModel)]="fileName" placeholder="Filename" />-->
+      <input type="file" id="file" (change)="receberFicheiro($event.target.files)" />
+    </label>
+  </div>
+  <p></p>
+  <button (click)="create()">Importar Ficheiro</button>
+</div>

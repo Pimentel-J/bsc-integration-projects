@@ -1,0 +1,34 @@
+<h2 >Viagens</h2>
+
+<div>
+  <button routerLink="/viagem">
+    Criar Viagens
+  </button>
+</div>
+<div>
+  <button routerLink="/viagemadhoc">
+    Criar Viagem Ad-Hoc
+  </button>
+</div>
+<table id="viagens">
+  <tr>
+    <th>Código Percurso</th>
+    <th>Origem - Destino</th>
+    <th>Hora Inicio</th>
+    <!--<th>--><!--Remover--><!--</th>-->
+  </tr>
+  <tr *ngFor="let viagem of viagens">
+    <td>
+      <a routerLink="/viagens/{{viagem.id}}">{{viagem.percursoId}}</a>
+    </td>
+    <td>
+      <a routerLink="/viagens/{{viagem.id}}">{{viagem.descritivo.split('@')[0]}}</a>
+    </td>
+    <td>{{timeMask(viagem.horaInicio)}}</td>
+    <!--<td align="center">
+      <button class="delete" (click)="delete(no)">
+        x
+      </button>
+    </td>-->
+  </tr>
+</table>

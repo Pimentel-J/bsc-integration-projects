@@ -1,0 +1,41 @@
+<div>
+<div>
+    <label>
+        Ordem:
+        <br>
+        <input [(ngModel)]="segmentoDTO.ordem" placeholder="Ordem" />
+    </label>
+</div>
+<div>
+    <label>
+        Nó Origem:
+        <br>
+        <select [(ngModel)]="segmentoDTO.noOrigem">
+            <option *ngFor="let no of selectNos">{{no.abreviatura}}</option>
+        </select>
+    </label>
+</div>
+<div>
+    <label>
+        Nó Destino:
+        <br>
+        <select [(ngModel)]="segmentoDTO.noDestino">
+            <option *ngFor="let no of selectNos">{{no.abreviatura}}</option>
+        </select>
+    </label>
+</div>
+<div>
+    <label>
+        Duração:
+        <br>
+        <input [(ngModel)]="segmentoDTO.duracao" placeholder="Duracao" />
+    </label>
+</div>
+<div>
+    <label>
+        Distância:
+        <br>
+        <input [(ngModel)]="segmentoDTO.distancia" placeholder="Distancia" />
+    </label>
+</div>
+</div>

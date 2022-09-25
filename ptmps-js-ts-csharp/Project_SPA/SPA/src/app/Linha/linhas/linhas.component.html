@@ -1,0 +1,28 @@
+<h2>Linhas da rede</h2>
+
+<div>
+  <button routerLink="/linha">
+    Adicionar
+  </button>
+</div>
+
+<table id="linhas">
+  <tr>
+    <th>Código</th>
+    <th>Nome</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor="let linha of linhas">
+    <td>
+      <a routerLink="/linhas/{{linha.codigo}}">{{linha.codigo}}</a>
+    </td>
+    <td>
+      <a routerLink="/linhas/{{linha.codigo}}">{{linha.nome}}</a>
+    </td>
+    <td align="center">
+      <button class="delete" (click)="delete(linha)">
+        x
+      </button>
+    </td>
+  </tr>
+</table>

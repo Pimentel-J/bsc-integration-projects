@@ -1,0 +1,51 @@
+<h2>Planeamento</h2>
+<h3>Mudança de motorista/tripulação entre estações de rendição e escolha</h3>
+<ngx-spinner bdColor="rgba(1,1,1,0)"
+             size="medium"
+             color="#fff">
+    <p style="font-size: 20px; text-align:center"><img src="assets/spinner.gif" /></p>
+    <p style="font-size: 20px; color: black; text-align:center">A calcular...</p>
+</ngx-spinner>
+<div>
+  <p>
+    N&oacute; de origem:
+    <select [(ngModel)]="solucoes.noOrigem">
+      <option *ngFor="let no of selectNos">{{no.abreviatura}}</option>
+    </select>
+  </p>
+  <p>
+    N&oacute; de destino:
+    <select [(ngModel)]="solucoes.noDestino">
+      <option *ngFor="let no of selectNos">{{no.abreviatura}}</option>
+    </select>
+  </p>
+  <p>
+    Hora inicial (seg.):
+    <input [(ngModel)]="solucoes.horaInicial" (keyup)="refreshHoraInicial()" placeholder="ex: 30000 = 08:20" />
+    {{horaInicialFormatada}}
+  </p>
+</div>
+  <div style="margin-top:25px">
+    <button (click)="geraSolucoes()">Gerar solução</button>
+  </div>
+  <div *ngIf="solucoes.caminho">
+    <p><b>N&oacute; de origem</b>: {{solucoes.noOrigem}}</p>
+    <p><b>N&oacute; de destino</b>: {{solucoes.noDestino}}</p>
+    <p><b>Hora inicial</b>: {{solucoes.horaInicial}} seg. ({{horaInicialFormatada}})</p>
+    <div *ngIf="solucoes.caminho.length > 0">
+      <p><b>Dura&ccedil;&atilde;o</b>: {{solucoes.duracao}} seg. ({{duracaoFormatada}})</p>
+      <p><b>Caminho</b>:</p>
+      <ul>
+        <li *ngFor="let ligacao of solucoes.caminho">
+          percurso {{ligacao.percurso}}: {{ligacao.noOrigem}} -> {{ligacao.noDestino}}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="solucoes.caminho.length == 0" style="color:darkred">
+      <p><b>Sem solução.</b></p>
+    </div>
+
+
+  </div>
+
+

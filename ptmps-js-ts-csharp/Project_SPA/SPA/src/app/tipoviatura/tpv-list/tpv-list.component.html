@@ -1,0 +1,31 @@
+<h2>Tipos de Viatura</h2>
+
+<div>
+    <button routerLink="/tipoviatura">
+    Adicionar
+  </button>
+    <button routerLink="/tipoviatura/search">
+    Pesquisar
+  </button>
+</div>
+
+<table id="tpv">
+  <tr>
+    <th>Código</th>
+    <th>Detalhes</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor="let tipoviatura of tiposviatura">
+    <td>
+      <a routerLink="/tiposviatura/{{tipoviatura.codigo}}">{{tipoviatura.codigo}}</a>
+    </td>
+    <td>
+      <a routerLink="/tiposviatura/{{tipoviatura.codigo}}">{{tipoviatura.nome}} {{tipoviatura.tipoCombustivel}} {{tipoviatura.autonomia}} {{tipoviatura.consumoMedio}} {{tipoviatura.custoKm}} {{tipoviatura.velocidadeMedia}} {{tipoviatura.emissoesCO2}}</a>
+    </td>
+    <td align="center">
+      <button class="delete" (click)="delete(tipoviatura)">
+        x
+      </button>
+    </td>
+  </tr>
+</table>

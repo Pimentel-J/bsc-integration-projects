@@ -1,0 +1,23 @@
+<div>
+    <h2>Criar Viagem Ad Hoc</h2>
+    <div>
+        <label>
+            Hora Inicio:
+            <p style="color: black">
+                <input [(ngModel)]="creatingViagemDTO.HoraInicio" (keyup)="refreshHoraInicial()"
+                    placeholder="Ex: 36000 seg. => 10h00" />
+                {{horaInicialFormatada}}
+            </p>
+        </label>
+    </div>
+    <div>
+        <label>
+            Percurso:
+            <select [(ngModel)]="creatingViagemDTO.PercursoId">
+                <option *ngFor="let p of selectPercursosIda">{{p.idPercurso}}</option>
+            </select>
+        </label>
+    </div>
+    <button (click)="goBack()">Voltar</button>
+    <button (click)="create()" class="hot">Criar Viagem Ad Hoc</button>
+</div>

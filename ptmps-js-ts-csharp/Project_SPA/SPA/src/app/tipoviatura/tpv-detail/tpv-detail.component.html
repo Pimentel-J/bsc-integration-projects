@@ -1,0 +1,54 @@
+<div>
+    <h2 *ngIf="criar"> Criar Tipo Viatura</h2>
+    <h2 *ngIf="!criar"> Detalhes Tipo Viatura</h2>
+    <div>
+        <label>
+            Codigo: 
+            <input required [(ngModel)]="tipoviatura.codigo" placeholder="tipoviatura.codigo" />
+        </label>
+    </div>
+    <div>
+        <label>Nome: 
+        <input [(ngModel)]="tipoviatura.nome" placeholder="tipoviatura.nome" />
+        </label></div>
+    <div>
+        <label>Tipo Combustivel: 
+      <!--   <input [(ngModel)]="tipoviatura.tipoCombustivel" placeholder="tipoviatura.tipoCombustivel" />-->
+      <select [(ngModel)]="tipoviatura.tipoCombustivel" placeholder="tipoviatura.tipoCombustivel">
+          <option *ngFor="let tipo of tipos" [value]="tipo.value"> {{tipo.viewValue}}</option>
+      </select>
+        </label>
+
+    </div>
+    <div>
+        <label>Autonomia: 
+            <input [(ngModel)]="tipoviatura.autonomia" placeholder="tipoviatura.autonomia" />
+            </label>
+    </div>
+    <div>
+        <label>Consumo Medio: 
+            <input [(ngModel)]="tipoviatura.consumoMedio" placeholder="tipoviatura.consumoMedio" />
+            </label>
+    </div>
+
+    <div>
+        <label>Custo Km: 
+            <input [(ngModel)]="tipoviatura.custoKm" placeholder="custoKm" />
+            </label>
+    </div>
+    <div>
+        <label>Velocidade Media: 
+            <input [(ngModel)]="tipoviatura.velocidadeMedia" placeholder="nome" />
+            </label>
+    </div>
+
+    <div>
+        <label>Emissões CO2: 
+            <input [(ngModel)]="tipoviatura.emissoesCO2" placeholder="nome" />
+            </label>
+    </div>
+
+    <button (click)="goBack()">Voltar</button>
+    <button *ngIf="!criar" (click)="save()" class="hot">Alterar</button>
+    <button *ngIf="criar" (click)="create()" class="hot">Guardar</button>
+</div>

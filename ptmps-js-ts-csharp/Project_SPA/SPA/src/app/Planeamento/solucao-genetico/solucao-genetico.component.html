@@ -1,0 +1,100 @@
+<h2>Planeamento</h2>
+<h3>Algoritmo genético de escalonamento de Motoristas a Serviços de Viatura</h3>
+<ngx-spinner bdColor="rgba(1,1,1,0)"
+             size="medium"
+             color="#fff">
+  <p style="font-size: 20px; text-align:center"><img src="assets/spinner.gif" /></p>
+  <p style="font-size: 20px; color: black; text-align:center">A calcular...</p>
+</ngx-spinner>
+<div>
+  <p>
+    Serviço de viatura:
+    <select [(ngModel)]="input.servicoViaturaID">
+      <option *ngFor="let servicoViatura of selectServicoViatura" [value]="servicoViatura.id">{{servicoViatura.id}}</option>
+    </select>
+  </p>
+  <!--<p>
+    Escalonamento dos Motoristas:
+    <input [(ngModel)]="input.escalonamentoMotoristas" placeholder='ex: [("276",6),("5188",6),("16690",6),("18107",6)]' /> ex: [("TRP123456",8),("TRP124578",8),("TRP321765",8)]
+    {{horaInicialFormatada}}
+  </p>-->
+<div>
+  Serviços Tripulante:
+  <button (click)="addST()">Adicionar preferência Serviço</button>
+  <div class="container" *ngIf="selectedServicosTripulante.length">
+    <ul>
+      <li *ngFor="let st of selectedServicosTripulante; let i = index; trackBy:trackByIndex">
+        <select [(ngModel)]="selectedServicosTripulante[i]">
+          <option *ngFor="let s of selectServicoTripulante" [ngValue]="s.codigoServicoTripulante">
+            {{s.codigoServicoTripulante}}
+          </option>
+        </select>
+        Nr. blocos:
+        <input [(ngModel)]="selectedNrBlocos[i]" placeholder="ex: 8" />
+      </li>
+    </ul>
+  </div>
+</div>
+  <p>
+    Número de gerações:
+    <input [(ngModel)]="input.numeroGeracoes" placeholder="ex: 100" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Tamanho da população:
+    <input [(ngModel)]="input.tamanhoPopulacao" placeholder="ex: 5" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Probabilidade de cruzamento (%):
+    <input [(ngModel)]="input.probCruzamento" placeholder="ex: 75" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Probabilidade de mutação (%):
+    <input [(ngModel)]="input.probMutacao" placeholder="ex: 25" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Taxa de preservação (%):
+    <input [(ngModel)]="input.taxaPreservacao" placeholder="ex: 30" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Número de gerações iguais até estagnar:
+    <input [(ngModel)]="input.numeroGeracoesEstagnacao" placeholder="ex: 0" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Valor do custo alvo (até parar):
+    <input [(ngModel)]="input.valorAlvo" placeholder="ex: 0" />
+    {{horaInicialFormatada}}
+  </p>
+  <p>
+    Tempo limite do algoritmo:
+    <input [(ngModel)]="input.tempoLimite" placeholder="ex: 0" />
+    {{horaInicialFormatada}}
+  </p>
+</div>
+<div style="margin-top:25px">
+  <button (click)="geraSolucoes()">Gerar solução</button>
+</div>
+<div *ngIf="solucao.escalonamento">
+  
+  <div *ngIf="solucao.escalonamento.length > 0">
+    <p><b>Custo</b>: {{solucao.custo}}</p>
+    <p><b>Escalonamento</b>:</p>
+    <ul>
+      <li *ngFor="let motorista of solucao.escalonamento">
+        {{motorista}}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="solucao.escalonamento.length == 0" style="color:darkred">
+    <p><b>Sem solução.</b></p>
+  </div>
+
+
+</div>
+
+

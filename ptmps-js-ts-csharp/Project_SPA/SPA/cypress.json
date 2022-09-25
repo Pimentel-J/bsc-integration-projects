@@ -1,0 +1,15 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "baseUrl": "http://localhost:4200",
+    "chromeWebSecurity": false,
+    "screenshotOnRunFailure": false,
+    "video": false,
+    "testFiles": "**/*.ts",
+    "fileServerFolder": "tests/tests/e2e/",
+    "fixturesFolder": "tests/e2e/fixtures",
+    "integrationFolder": "tests/e2e/integration",
+    "pluginsFile": "tests/e2e/plugins/index.js",
+    "screenshotsFolder": "tests/e2e/screenshots",
+    "supportFile": "tests/e2e/support/index.js",
+    "videosFolder": "tests/e2e/videos"
+}
