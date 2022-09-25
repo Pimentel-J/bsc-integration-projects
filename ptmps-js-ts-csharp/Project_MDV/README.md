@@ -6,7 +6,7 @@
 
 * [Readme com Informação do Projeto](../Project_MDR/README.md)
 
-* [Wiki - SAD](../Project_Wiki/Home.md)
+* [Wiki - SAD](../Project_Wiki/Readme.md)
 
 ### Repositório dos Outros Módulos do Projeto
 

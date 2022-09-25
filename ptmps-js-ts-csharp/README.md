@@ -58,7 +58,7 @@ A system to manage different transportation networks (lines, trips, etc.). As we
 
 3. [Analysis and Design](./Project_MDR/Docs/)
 
-4. [Software Architecture Document (SAD)](./Project_Wiki/Home.md)
+4. [Software Architecture Document (SAD)](./Project_Wiki/Readme.md)
     
     4.1. [Architecture Design (*C4 Model*)](./Project_MDR/Docs/design_arquitetura.md)
 
