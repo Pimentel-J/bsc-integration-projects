@@ -1,0 +1,47 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:10.15.3
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Build and Test
+            caches:
+              - node
+            script:
+              - cd MDR
+              - npm install mocha
+              - npm install
+              - npm test
+        - step:
+            name: Code linting
+            script:
+              - cd MDR
+              - npm install eslint --save-dev
+              - npx eslint --init
+            caches:
+              - node
+        - step:
+            name: Deploy MDR to Heroku
+            script:
+            - npm install gnu
+            - tar -cvzf MDR.tgz ./MDR
+            - pipe: atlassian/heroku-deploy:1.2.1
+              variables:
+                HEROKU_API_KEY: '***private***'
+                HEROKU_APP_NAME: 'lapr5-20s5-3na-2-mdr'
+                ZIP_FILE: 'MDR.tgz'
+        - step:
+            name: Deploy Authentication to Heroku
+            script:
+            - npm install gnu
+            - tar -cvzf AuthServer.tgz ./AuthServer
+            - pipe: atlassian/heroku-deploy:1.2.1
+              variables: 
+                HEROKU_API_KEY: '***private***'
+                HEROKU_APP_NAME: 'lapr5-20s5-3na-2-auth'
+                ZIP_FILE: 'AuthServer.tgz'

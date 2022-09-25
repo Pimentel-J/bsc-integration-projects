@@ -1,0 +1,4 @@
+﻿{
+    "connectionString": "mongodb+srv://data_admin:atlas123456@20s5-3na-2.4fvrt.mongodb.net/ait_auth?retryWrites=true&w=majority",
+    "secret": "***private***"
+}
