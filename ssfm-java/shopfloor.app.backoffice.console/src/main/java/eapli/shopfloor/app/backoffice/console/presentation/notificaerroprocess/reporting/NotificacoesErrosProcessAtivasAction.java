@@ -3,7 +3,7 @@ package eapli.shopfloor.app.backoffice.console.presentation.notificacoeserroproc
 import eapli.framework.actions.Action;
 
 /**
- *João Pimentel [1161874]
+ *
  */
 public class NotificacoesErrosProcessamentoAtivasAction implements Action {
 
