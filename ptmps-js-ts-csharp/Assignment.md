@@ -6,7 +6,7 @@ The system must be composed of a **Single Page Application (SPA)** web applicati
 ## 1.1. Main Features of Each Module of the System
 
 * **Master Data** - allows the management of information related to the network (nodes, routes), vehicle types, crew types, lines and trips.
-* **Planning** - based on existing routes plan crew exchanges at surrender points. Planning the crew services based on the vehicle services. Consumes the information managed in the master data module and publishes planning information to the visualization module.
+* **Planning** - plan crew exchanges at surrender points based on existing routes. Planning the crew services based on the vehicle services. Consumes the information managed in the master data module and publishes planning information to the visualization module.
 * **Visualizer** - allows 2D and 3D network visualization, scene navigation and graphical querying of trip information. It consumes the information managed in the master data module and the planning module.
 * **UI** - user interface
 * **Customers + GDPR** - management of end-user "customer" information and their consents under the GDPR.
