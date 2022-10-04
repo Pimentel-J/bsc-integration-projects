@@ -8,6 +8,7 @@
 [![IntelliJ IDEA][IntelliJ-IDEA-badge]][IntelliJ-IDEA-url]
 [![Jenkins][Jenkins-badge]][Jenkins-url]
 [![SonarQube][SonarQube-badge]][SonarQube-url]
+[![Oracle][Oracle-badge]][Oracle-url]
 [![Jira-Software][Jira-Software-badge]][Jira-Software-url]
 [![Bitbucket][Bitbucket-badge]][Bitbucket-url]
 [![Sourcetree][Sourcetree-badge]][Sourcetree-url]
@@ -70,6 +71,8 @@ Support of ridesharing businesses. From managing routes, users, bicycles, electr
 [Java-url]: https://www.java.com
 [Jira-Software-badge]: https://img.shields.io/badge/Jira_Software-0052CC?style=for-the-badge&logo=JiraSoftware&logoColor=white
 [Jira-Software-url]: https://www.atlassian.com/software/jira
+[Oracle-badge]: https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white
+[Oracle-url]: https://www.oracle.com/database/technologies/appdev/sql.html
 [Sourcetree-badge]: https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=Sourcetree&logoColor=white
 [Sourcetree-url]: https://www.sourcetreeapp.com/
 [Trello-badge]: https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white
