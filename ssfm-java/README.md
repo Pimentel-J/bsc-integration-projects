@@ -49,12 +49,13 @@ Track, schedule and real-time reports of production orders and their execution. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 3. Working Group
-| Authors           |
-|-------------------|
-| Diogo Vieira      |
-| João Pimentel     |
-| Pedro Magalhães   |
-| Samuel Esperança  |
+
+| Authors   |
+|-----------|
+| Esperança |
+| Magalhães |
+| Pimentel  |
+| Vieira    |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

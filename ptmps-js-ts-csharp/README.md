@@ -68,13 +68,14 @@ A system to manage different transportation networks (lines, trips, etc.). As we
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 3. Working Group
-| Authors           |
-|-------------------|
-| Bruno Calisto     |
-| João Pimentel     |
-| Pedro Magalhães   |
-| Samuel Esperança  |
-| Vítor Oliveira    |
+
+| Authors   |
+|-----------|
+| Calisto   |
+| Esperança |
+| Magalhães |
+| Oliveira  |
+| Pimentel  |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

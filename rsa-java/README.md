@@ -44,12 +44,13 @@ Support of ridesharing businesses. From managing routes, users, bicycles, electr
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 3. Working Group
-| Authors           |
-|-------------------|
-| Francisco Silva   |
-| João Cunha        |
-| João Machado      |
-| João Pimentel     | 
+
+| Authors  |
+|----------|
+| Cunha    |
+| Machado  |
+| Pimentel | 
+| Silva    |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

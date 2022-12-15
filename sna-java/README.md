@@ -28,13 +28,14 @@ Social network analysis with a simplified version of Google’s Page Rank algori
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 2. Working Group
-| Authors           |
-|-------------------|
-| Diogo Vieira      |
-| Francisco Silva   |
-| Frederico Marinho |
-| João Pimentel     |
-| Nuno Ferreira     |
+
+| Authors  |
+|----------|
+| Ferreira |
+| Marinho  |
+| Pimentel |
+| Silva    |
+| Vieira   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

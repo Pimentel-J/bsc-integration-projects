@@ -55,13 +55,14 @@ Application to manage services requests from clients and the activity of compani
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 3. Working Group
-| Authors           |
-|-------------------|
-| Diogo Vieira      |
-| Francisco Silva   |
-| Frederico Marinho |
-| João Pimentel     |
-| Nuno Ferreira     |
+
+| Authors  |
+|----------|
+| Ferreira |
+| Marinho  |
+| Pimentel |
+| Silva    |
+| Vieira   |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
