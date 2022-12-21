@@ -35,7 +35,7 @@ Support of ridesharing businesses. From managing routes, users, bicycles, electr
 
 ## 2. Documentation
 
-1. [Project Assignment](Assignment.md)
+1. [Project Assignment](lapr3-2019-g044/documentation/Assignment.mdd)
 
 2. [Ride-Sharing App Documentation](lapr3-2019-g044/Readme.md) (*lapr3-2019-g044*)
 
