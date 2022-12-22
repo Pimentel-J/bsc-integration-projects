@@ -2,7 +2,7 @@
 
 # Informatics Engineering BSc Integration Projects
 
-## **Polytechnic of Porto, School of Engineering | ISEP 2018/2021**
+## **Polytechnic of Porto, School of Engineering | 2018/2021**
 
 [![ISEP][ISEP-badge]][ISEP-url]
 [![ISEP-LEI][ISEP-LEI-badge]][ISEP-LEI-url]
