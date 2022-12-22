@@ -7,8 +7,8 @@
 
 # Team Members
 
-* Diogo Vieira
-* Francisco Silva
-* Frederico Marinho
-* João Pimentel
-* Nuno Ferreira
+* Ferreira
+* Marinho
+* Pimentel
+* Silva
+* Vieira
