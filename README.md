@@ -15,7 +15,8 @@
 
 ## 1. About the Integration Projects
 
-Multidisciplinary and integrated projects developed by a group of students each semester. Working as a team and simulating the context of a business project. Practicing iterative development methods and processes as well as project management techniques learned along the way.
+Integration projects developed by a team of students and involving multiple course units.
+Simulation of the context of a business project, practising iterative development methods and processes, as well as project management techniques learned along the way.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

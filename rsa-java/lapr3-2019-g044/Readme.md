@@ -1,13 +1,13 @@
-# Project Readme - Group 44 #
+# Project Readme #
 
 This project assignment is about the development of a Java software, that supports ride-sharing businesses, according to concepts of analysis, modelling and object-oriented programming. This service supports managing users, bicycles, electric scooters, parks and pickup and return process.
 
-## Team Members - Group 44 ##
+## Team Members ##
 
-* Francisco Silva
-* João Cunha
-* João Machado
-* João Pimentel
+* Cunha, J.
+* Machado, J.
+* Pimentel, J.
+* Silva, F.
 
 ## Documentation Files ##
 
@@ -23,7 +23,7 @@ All documentation files (including images) are located in [documentation folder]
 3. [Engineering Design](./documentation/OODesign.md)
     1. [Class Diagrams (CD)](./documentation/ClassDiagrams.md)
     2. [Sequence Diagrams (SD)](./documentation/SequenceDiagrams.md)
-    3. [Entity Relationship Diagram (Normalised)](./documentation/ERD.png)
+    3. [Entity Relationship Diagram (Normalized)](./documentation/ERD.png)
 
 
 ## Domain Model (DM) ##
