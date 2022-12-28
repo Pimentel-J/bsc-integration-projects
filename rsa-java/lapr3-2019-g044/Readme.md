@@ -12,7 +12,6 @@ This project assignment is about the development of a Java software, that suppor
 ## Documentation Files ##
 
 All documentation files (including images) are located in [documentation folder](./documentation/).
-- [Project Assignment](documentation/Assignment.md)
 
 ## Documentation Index ##
 

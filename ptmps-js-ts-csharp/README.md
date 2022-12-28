@@ -11,14 +11,11 @@
 [![dotnet][dotnet-badge]][dotnet-url]
 [![CSharp][CSharp-badge]][CSharp-url]
 [![SWI-Prolog][SWI-Prolog-badge]][SWI-Prolog-url]
-[![Perl][Perl-badge]][Perl-url]
 
 [![Azure][Azure-badge]][Azure-url]
 [![Heroku][Heroku-badge]][Heroku-url]
 [![MongoDB][MongoDB-badge]][MongoDB-url]
 [![Jira-Software][Jira-Software-badge]][Jira-Software-url]
-[![Bitbucket][Bitbucket-badge]][Bitbucket-url]
-[![Sourcetree][Sourcetree-badge]][Sourcetree-url]
 [![VSCode][VSCode-badge]][VSCode-url]
 [![Visual-Paradigm][Visual-Paradigm-badge]][Visual-Paradigm-url]
 
@@ -41,29 +38,32 @@ A system to manage different transportation networks (lines, trips, etc.). As we
 
 > A multidisciplinary and integrative project developed by a team of students.
 
+> [!NOTE]
+> NOTE: a portuguese language project (mostly)
+
 ## 1.1. Project's Modules
 
 * [Network Master Data (*MDR*)](./Project_MDR/)
+    * [Readme](./Project_MDR/README.md)
 * [Planning (*Planeamento*)](./Project_MDR/Planeamento/)
+    * [Readme](./Project_MDR/Planeamento/README.md)    
 * [Single Page Application (*SPA*)](./Project_SPA/)
+    * [Readme](./Project_SPA/README.md)
 * [Rides Master Data (*MDV*)](./Project_MDV/)
+    * [Readme](./Project_MDV/README.md)    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 2. Documentation
+### **NOTE:** a portuguese language project (mostly)
 
-1. [Assignment](./Assignment.md)
+1. [Assignment Overview](./Assignment.md)
+ 
+2. [Analysis and Design](./Project_MDR/Docs/)
 
-2. [Readme](./Project_MDR/README.md)
+3. [Software Architecture Document (SAD)](./Project_Wiki/Readme.md)
 
-3. [Analysis and Design](./Project_MDR/Docs/)
-
-4. [Software Architecture Document (SAD)](./Project_Wiki/Readme.md)
-    
-    4.1. [Architecture Design (*C4 Model*)](./Project_MDR/Docs/design_arquitetura.md)
-
-
-> **Note**: almost all files are in portuguese
+    3.1. [Architecture Design (*C4 Model*)](./Project_MDR/Docs/design_arquitetura.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,8 +85,6 @@ A system to manage different transportation networks (lines, trips, etc.). As we
 [Angular-url]: https://angular.io/
 [Azure-badge]: https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=MicrosoftAzure&logoColor=white
 [Azure-url]: https://azure.microsoft.com/
-[Bitbucket-badge]: https://img.shields.io/badge/Bitbucket-0747a6?style=for-the-badge&logo=bitbucket&logoColor=white
-[Bitbucket-url]: https://bitbucket.org/
 [dotnet-badge]: https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=.NET&logoColor=white
 [dotnet-url]: https://dotnet.microsoft.com/en-us/
 [CSharp-badge]: https://img.shields.io/badge/C--Sharp-239120?style=for-the-badge&logo=CSharp&logoColor=white
@@ -105,10 +103,6 @@ A system to manage different transportation networks (lines, trips, etc.). As we
 [Jira-Software-url]: https://www.atlassian.com/software/jira
 [MongoDB-badge]: https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white
 [MongoDB-url]: https://www.mongodb.com/
-[Perl-badge]: https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=Perl&logoColor=white
-[Perl-url]: https://www.perl.org/
-[Sourcetree-badge]: https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=Sourcetree&logoColor=white
-[Sourcetree-url]: https://www.sourcetreeapp.com/
 [SWI-Prolog-badge]: https://img.shields.io/badge/SWI--Prolog-ED3324?style=for-the-badge&logo=Duolingo&logoColor=white
 [SWI-Prolog-url]: https://www.swi-prolog.org/
 [TypeScript-badge]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white

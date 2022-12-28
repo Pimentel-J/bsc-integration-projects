@@ -1,4 +1,4 @@
-# SPA - Part of ISEP-LEI LAPR5's Integration Project 2020/2021 - 20S5_3NA_2
+# SPA - Part of ISEP-LEI - 5th Semester
 
 * [Project's Main Readme](../Project_MDR/README.md)
 
@@ -8,15 +8,15 @@
 
 * [MDV](../Project_MDV/)
 
-## Work Group - 20S5_3NA_2
+## Work Group
 
-|  Student Name     |
-|-------------------|
-| Bruno Calisto     |
-| João Pimentel     |
-| Pedro Magalhães   |
-| Samuel Esperança  |
-| Vítor Oliveira    |
+| |
+|-----------|
+| Calisto   |
+| Esperança |
+| Magalhães |
+| Oliveira  |
+| Pimentel  |
 
 > This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
@@ -24,9 +24,9 @@
 
 Run `npm start`
 
-* MDR Cloud URL: https://lapr5-20s5-3na-2-mdr.herokuapp.com
+* MDR Cloud URL: https://***private***.herokuapp.com
 
-* Planeamento Cloud URL: http://3.138.140.20:1234
+* Planeamento Cloud URL: http://***private***:1234
 
 ## Development server
 

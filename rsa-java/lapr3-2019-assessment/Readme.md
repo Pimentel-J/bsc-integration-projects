@@ -32,7 +32,7 @@ For each Test Scenario, create a package named lapr.project.assessment.scenarioX
 
 On this package, create a Test Class named ScenarioXXXTest, where XXX should be replaced by the scenario id.
 
-For resources, creata a folder named test/resources/scenario001 and place the expected-results.csv and input.csv.
+For resources, create a folder named test/resources/scenario001 and place the expected-results.csv and input.csv.
 
 After running the tests, the output will be placed in this directory.
 

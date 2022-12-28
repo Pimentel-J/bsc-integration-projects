@@ -30,15 +30,15 @@ Esta wiki é o Software Architecture Document (SAD)/Documento de Arquitetura de 
 
 > NB: Este DAS é baseado em [Software+Architecture+Documentation+Template](https://wiki.sei.cmu.edu/confluence/display/SAD/Software+Architecture+Documentation+Template)
 
-## Constituição do Grupo de Trabalho - 20S5_3NA_2
+## Constituição do Grupo de Trabalho
 
-| Nome do Aluno	  |
-|-------------------|
-| Bruno Calisto     |
-| João Pimentel     |
-| Pedro Magalhães   |
-| Samuel Esperança  |
-| Vítor Oliveira    |
+| |
+|-----------|
+| Calisto   |
+| Esperança |
+| Magalhães |
+| Oliveira  |
+| Pimentel  |
 
 ## Módulos da App
 

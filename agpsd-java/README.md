@@ -11,7 +11,6 @@
 [![Bitbucket][Bitbucket-badge]][Bitbucket-url]
 [![Sourcetree][Sourcetree-badge]][Sourcetree-url]
 [![Trello][Trello-badge]][Trello-url]
-[![VSCode][VSCode-badge]][VSCode-url]
 [![Visual-Paradigm][Visual-Paradigm-badge]][Visual-Paradigm-url]
 [![ISEP][ISEP-badge]][ISEP-url]
 [![ISEP-LEI][ISEP-LEI-badge]][ISEP-LEI-url]
@@ -34,23 +33,21 @@ Application to manage services requests from clients and the activity of compani
 
 ## 2. Documentation
 
-1. [Project Assignment](AGPSD%20Wiki/Assignment.md)
+1. [Client Services Provider [AGPSD Wiki]](AGPSD%20Wiki/Home.md)
 
-2. [Client Services Provider [AGPSD Wiki]](AGPSD%20Wiki/Home.md)
+    1.1. [Requirements](AGPSD%20Wiki/Requirements.md)
 
-    2.1. [Requirements](AGPSD%20Wiki/Requirements.md)
-
-    2.2. [OO Analysis](AGPSD%20Wiki/OOAnalysis.md)
+    1.2. [OO Analysis](AGPSD%20Wiki/OOAnalysis.md)
     
-    2.3. [OO Design](AGPSD%20Wiki/OODesign.md)
+    1.3. [OO Design](AGPSD%20Wiki/OODesign.md)
 
-3. [Service Provider [SP Wiki]](SP%20Wiki/Home.md)
+2. [Service Provider [SP Wiki]](SP%20Wiki/Home.md)
      
-    3.1. [Requirements](SP%20Wiki/Requirements.md)
+    2.1. [Requirements](SP%20Wiki/Requirements.md)
     
-    3.2. [OO Analysis](SP%20Wiki/OOAnalysis.md)
+    2.2. [OO Analysis](SP%20Wiki/OOAnalysis.md)
 
-    3.3. [OO Design](SP%20Wiki/OODesign.md)
+    2.3. [OO Design](SP%20Wiki/OODesign.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,5 +85,3 @@ Application to manage services requests from clients and the activity of compani
 [Trello-url]: https://trello.com/
 [Visual-Paradigm-badge]: https://img.shields.io/badge/visual_paradigm-CC3333.svg?style=for-the-badge&logo=Skypack&logoColor=white
 [Visual-Paradigm-url]: https://www.visual-paradigm.com/
-[VSCode-badge]: https://img.shields.io/badge/VSCode-007ACC.svg?style=for-the-badge&logo=VisualStudioCode&logoColor=white
-[VSCode-url]: https://code.visualstudio.com/

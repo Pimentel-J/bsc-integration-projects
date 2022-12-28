@@ -30,7 +30,7 @@ Cypress.Commands.add('postToken', () => {
     let token
     cy.request({
         method: 'POST',
-        url: 'https://lapr5-20s5-3na-2-auth.herokuapp.com/users/authenticate',
+        url: 'https://***private***.herokuapp.com/users/authenticate',
         failOnStatusCode: false,
         json: true,
         form: true,

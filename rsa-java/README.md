@@ -10,8 +10,6 @@
 [![SonarQube][SonarQube-badge]][SonarQube-url]
 [![Oracle][Oracle-badge]][Oracle-url]
 [![Jira-Software][Jira-Software-badge]][Jira-Software-url]
-[![Bitbucket][Bitbucket-badge]][Bitbucket-url]
-[![Sourcetree][Sourcetree-badge]][Sourcetree-url]
 [![VSCode][VSCode-badge]][VSCode-url]
 [![Visual-Paradigm][Visual-Paradigm-badge]][Visual-Paradigm-url]
 [![ISEP][ISEP-badge]][ISEP-url]
@@ -35,11 +33,9 @@ Support of ridesharing businesses. From managing routes, users, bicycles, electr
 
 ## 2. Documentation
 
-1. [Project Assignment](lapr3-2019-g044/documentation/Assignment.md)
+1. [Ride-Sharing App Documentation](lapr3-2019-g044/Readme.md) (*lapr3-2019-g044*)
 
-2. [Ride-Sharing App Documentation](lapr3-2019-g044/Readme.md) (*lapr3-2019-g044*)
-
-3. [Assessment Tests Readme](lapr3-2019-assessment/Readme.md) (*lapr3-2019-assessment*)
+2. [Assessment Tests Readme](lapr3-2019-assessment/Readme.md) (*lapr3-2019-assessment*)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,8 +52,6 @@ Support of ridesharing businesses. From managing routes, users, bicycles, electr
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[Bitbucket-badge]: https://img.shields.io/badge/Bitbucket-0747a6?style=for-the-badge&logo=bitbucket&logoColor=white
-[Bitbucket-url]: https://bitbucket.org/
 [ISEP-badge]: https://img.shields.io/badge/ISEP-orange.svg?style=for-the-badge&logo=Leanpub&logoColor=white
 [ISEP-url]: https://www.isep.ipp.pt/
 [ISEP-LEI-badge]: https://img.shields.io/badge/LEI_BSc-gray.svg?style=for-the-badge&logo=HTMLAcademy&logoColor=white
@@ -74,10 +68,6 @@ Support of ridesharing businesses. From managing routes, users, bicycles, electr
 [Jira-Software-url]: https://www.atlassian.com/software/jira
 [Oracle-badge]: https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white
 [Oracle-url]: https://www.oracle.com/database/technologies/appdev/sql.html
-[Sourcetree-badge]: https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=Sourcetree&logoColor=white
-[Sourcetree-url]: https://www.sourcetreeapp.com/
-[Trello-badge]: https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white
-[Trello-url]: https://trello.com/
 [Visual-Paradigm-badge]: https://img.shields.io/badge/visual_paradigm-CC3333.svg?style=for-the-badge&logo=Skypack&logoColor=white
 [Visual-Paradigm-url]: https://www.visual-paradigm.com/
 [VSCode-badge]: https://img.shields.io/badge/VSCode-007ACC.svg?style=for-the-badge&logo=VisualStudioCode&logoColor=white

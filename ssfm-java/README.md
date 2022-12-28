@@ -9,8 +9,6 @@
 [![Jenkins][Jenkins-badge]][Jenkins-url]
 [![SonarQube][SonarQube-badge]][SonarQube-url]
 [![Jira-Software][Jira-Software-badge]][Jira-Software-url]
-[![Bitbucket][Bitbucket-badge]][Bitbucket-url]
-[![Sourcetree][Sourcetree-badge]][Sourcetree-url]
 [![VSCode][VSCode-badge]][VSCode-url]
 [![Visual-Paradigm][Visual-Paradigm-badge]][Visual-Paradigm-url]
 [![ISEP][ISEP-badge]][ISEP-url]
@@ -61,8 +59,6 @@ Track, schedule and real-time reports of production orders and their execution. 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[Bitbucket-badge]: https://img.shields.io/badge/Bitbucket-0747a6?style=for-the-badge&logo=bitbucket&logoColor=white
-[Bitbucket-url]: https://bitbucket.org/
 [ISEP-badge]: https://img.shields.io/badge/ISEP-orange.svg?style=for-the-badge&logo=Leanpub&logoColor=white
 [ISEP-url]: https://www.isep.ipp.pt/
 [ISEP-LEI-badge]: https://img.shields.io/badge/LEI_BSc-gray.svg?style=for-the-badge&logo=HTMLAcademy&logoColor=white
@@ -77,8 +73,6 @@ Track, schedule and real-time reports of production orders and their execution. 
 [Java-url]: https://www.java.com
 [Jira-Software-badge]: https://img.shields.io/badge/Jira_Software-0052CC?style=for-the-badge&logo=JiraSoftware&logoColor=white
 [Jira-Software-url]: https://www.atlassian.com/software/jira
-[Sourcetree-badge]: https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=Sourcetree&logoColor=white
-[Sourcetree-url]: https://www.sourcetreeapp.com/
 [Visual-Paradigm-badge]: https://img.shields.io/badge/visual_paradigm-CC3333.svg?style=for-the-badge&logo=Skypack&logoColor=white
 [Visual-Paradigm-url]: https://www.visual-paradigm.com/
 [VSCode-badge]: https://img.shields.io/badge/VSCode-007ACC.svg?style=for-the-badge&logo=VisualStudioCode&logoColor=white

@@ -14,13 +14,13 @@
                     \'-'/                      \'-'/
                      '-'                        '-'
 
-# Projeto Integrador ISEP-LEI LAPR5 2020/2021 - 20S5_3NA_2
+# Projeto Integrador ISEP-LEI - 5º Semestre
 
 ## **Índice do Projeto**
 
 1. Módulos da App - Repositórios
 
-    1.1. [SPA](../Project_SPA/) - [Azure Link](https://lapr5-20s5-3na-2.azurewebsites.net)
+    1.1. [SPA](../Project_SPA/)
 
     1.2. [Master Data Rede](../Project_MDR/)
 
@@ -34,7 +34,7 @@
 
 4. [Design Arquitetural](./Docs/design_arquitetura.md)
 
-5. Backlog - Jira Issues (turned off)
+5. Backlog - Jira Software (*turned off*)
 
 6. Requisitos Funcionais e Não Funcionais
 
@@ -48,11 +48,7 @@
 
 7. [User Stories - Análise e Design](./Docs/us.md)
 
-8. [RGPD](./Docs/RGPD)
-
-9. [Glossário](./Docs/glossario.md)
-
-10. [Test Coverage MDR & SPA](./Docs/Test_Coverage_Results)
+8. [Glossário](./Docs/glossario.md)
 
 ## **Índice do README - Módulos MDR, SPA e Planeamento**
 
@@ -76,15 +72,15 @@
 
 **Nota**: Todos os ficheiros da documentação encontram-se localizados na pasta [**Docs**](./Docs).
 
-## Constituição do Grupo de Trabalho - 20S5_3NA_2
+## Constituição do Grupo de Trabalho
 
-| Nome do Aluno		|
-|-------------------|
-| Bruno Calisto     |
-| João Pimentel     |
-| Pedro Magalhães   |
-| Samuel Esperança  |
-| Vítor Oliveira    |
+| |
+|-----------|
+| Calisto   |
+| Esperança |
+| Magalhães |
+| Oliveira  |
+| Pimentel  |
 
 ## 1. Sistema a Desenvolver
 A Autoridade Intermunicipal de Transportes  (AIT) pretende um sistema de gestão e planeamento de transportes públicos que permite a gestão bem como consulta pelo público em geral de diferentes redes de transportes, linhas e viagens, bem como o planeamento dos serviços de viaturas e tripulantes a efetuar nessas linhas.
@@ -154,17 +150,17 @@ Embora não esteja no âmbito atual do projeto, deve ser levado em conta na arqu
 
 ![ASP.NET & Angular](./Docs/net_core_angular.png)
 
-## 3. MongoDB Atlas e Heroku do Projeto (*inactive*)
+## 3. MongoDB Atlas e Heroku do Projeto - **offline**
 
-* [MongoDB Project Link](https://cloud.mongodb.com/)
+* [MongoDB Project Link - **offline**](https://cloud.mongodb.com/)
 
 * Heroku Dashboard Link's:
 
-    * [Heroku Módulo MDR](https://dashboard.heroku.com/apps/lapr5-20s5-3na-2-mdr)
+    * [Heroku Módulo MDR - **offline**](https://dashboard.heroku.com/apps/)
 
-    * [Heroku Módulo MDV](https://dashboard.heroku.com/apps/lapr5-20s5-3na-2-mdv)
+    * [Heroku Módulo MDV - **offline**](https://dashboard.heroku.com/apps/)
 
-    * [Heroku Módulo Planeamento](https://dashboard.heroku.com/apps/lapr5-20s5-3na-2-plan)
+    * [Heroku Módulo Planeamento - **offline**](https://dashboard.heroku.com/apps/)
 
 ## 4. Node.js
 
@@ -225,7 +221,7 @@ Embora não esteja no âmbito atual do projeto, deve ser levado em conta na arqu
 
 #### 6.1.1. Website
 
-1. http://lapr5-20s5-3na-2.azurewebsites.net
+1. http://***private***.azurewebsites.net
 2. Login Username -> admin
 3. Password -> ***private***
 
@@ -242,11 +238,11 @@ Embora não esteja no âmbito atual do projeto, deve ser levado em conta na arqu
 
 ### 7.1. Microsoft Azure DB
 
-URL: `https://lapr5-20s5-3na-mdv.azurewebsites.net/api`
+URL: `https://***private***.azurewebsites.net/api`
 
-AzureConnection: `lapr5-20s5-3na-2-mdvdb.database.windows.net`
+AzureConnection: `***private***.database.windows.net`
 
-DB Name: MDV-BD: `lapr5-20s5-3na-2-mdvdb`
+DB Name: MDV-BD: `***private***`
 
 Username: ***private***
 
@@ -267,6 +263,6 @@ Pass: ***private***
 
 * [Postman](https://www.postman.com)
 
-* [Smart commits with Jira](https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html) - Exemplo: *LAPR5-33 #done #comment Alteração Wiki concluído*
+* [Smart commits with Jira](https://confluence.atlassian.com/bitbucket/use-smart-commits-298979931.html)
 
 * [The Modern JavaScript Tutorial](https://javascript.info/)
