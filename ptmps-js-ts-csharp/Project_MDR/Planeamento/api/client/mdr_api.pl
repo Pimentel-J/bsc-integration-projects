@@ -1,4 +1,4 @@
-% imports necessários
+% imports necessï¿½rios
 
 :- use_module(library(http/http_open)).
 :- use_module(library(http/json)).
@@ -14,7 +14,7 @@ load_data :-
   gera_ligacoes.
 
 
-% limpa a base de conhecimento no que toca aos factos que serão carregados das fontes MDR e MDV (evita duplicações)
+% limpa a base de conhecimento no que toca aos factos que serï¿½o carregados das fontes MDR e MDV (evita duplicaï¿½ï¿½es)
 
 clear_bc :-
     abolish(no,6),
@@ -23,24 +23,24 @@ clear_bc :-
     abolish(liga,3).
 
 
-% carregar dados dos nós da rede
+% carregar dados dos nï¿½s da rede
 
 get_nos :-
-  http_open('https://lapr5-20s5-3na-2-mdr.herokuapp.com/api/nos', Reply, [request_header('Accept'='application/json')]),
+  http_open('https://***private***.herokuapp.com/api/nos', Reply, [request_header('Accept'='application/json')]),
   json_read_dict(Reply, Dict),
   close(Reply),
-  format('---- MDR API - Load Nós ---- '),
+  format('---- MDR API - Load Nï¿½s ---- '),
   assert_nos(Dict, NLinhas),
-  format('~d nós importados~n', NLinhas).
+  format('~d nï¿½s importados~n', NLinhas).
 
-  % percorre cada nó da lista e faz assert do mesmo
+  % percorre cada nï¿½ da lista e faz assert do mesmo
 assert_nos([],0).
 assert_nos([H|L],N) :-
     assert_no(H),
     assert_nos(L,N2),
     N is N2+1.
   
-  % assert de um nó
+  % assert de um nï¿½
 assert_no(No) :-
     %format('No: abrev="~w", nome="~w" ~n', [No.abreviatura, No.nome] ),
     assertz(no(No.nome,No.abreviatura,No.pontoRendicao,No.estacaoRecolha,No.longitude,No.latitude)).
@@ -50,7 +50,7 @@ assert_no(No) :-
 % carregar dados das linhas
 
 get_linhas :-
-  http_open('https://lapr5-20s5-3na-2-mdr.herokuapp.com/api/percursos', Reply, [request_header('Accept'='application/json')]),
+  http_open('https://***private***.herokuapp.com/api/percursos', Reply, [request_header('Accept'='application/json')]),
   json_read_dict(Reply, Dict),
   close(Reply),
   format('---- MDR API - Load Linhas ---- '),
@@ -60,7 +60,7 @@ get_linhas :-
   % percorre cada linha da lista e faz assert da mesma
 assert_linhas([],0).
 assert_linhas([H|L],N) :-
-    (atom(H.idLinha);assert_linha(H)), % só faz assert se o idLinha não for nulo
+    (atom(H.idLinha);assert_linha(H)), % sï¿½ faz assert se o idLinha nï¿½o for nulo
     assert_linhas(L,N2),
     N is N2+1.
 
@@ -75,14 +75,14 @@ assert_linha(Linha) :-
     %number_string(IDPercurso,Linha.idPercurso),
     assertz(linha(Linha.idLinha.nome,Linha.idPercurso,Nos,Duracao_min,Distancia)).
 
-  % fornece os totais da duração e distância da linha completa (soma dos vários segmentos que a compõem
+  % fornece os totais da duraï¿½ï¿½o e distï¿½ncia da linha completa (soma dos vï¿½rios segmentos que a compï¿½em
 get_dados_linha([], 0, 0).
 get_dados_linha([H|L], Duracao, Distancia) :-
     get_dados_linha(L, Duracao2, Distancia2),
     Duracao is H.duracao + Duracao2,
     Distancia is H.distancia + Distancia2.
 
-  % fornece uma lista de abreviaturas de nós representados a partir da lista de segmentos
+  % fornece uma lista de abreviaturas de nï¿½s representados a partir da lista de segmentos
 get_lista_nos(Segs, Nos):-
     get_lista_nos2(1, Segs, Nos).
 get_lista_nos2(_,[],[]):-!.

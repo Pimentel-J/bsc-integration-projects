@@ -33,7 +33,7 @@ pipelines:
             - pipe: atlassian/heroku-deploy:1.2.1
               variables:
                 HEROKU_API_KEY: '***private***'
-                HEROKU_APP_NAME: 'lapr5-20s5-3na-2-mdr'
+                HEROKU_APP_NAME: '***private***'
                 ZIP_FILE: 'MDR.tgz'
         - step:
             name: Deploy Authentication to Heroku
@@ -43,5 +43,5 @@ pipelines:
             - pipe: atlassian/heroku-deploy:1.2.1
               variables: 
                 HEROKU_API_KEY: '***private***'
-                HEROKU_APP_NAME: 'lapr5-20s5-3na-2-auth'
+                HEROKU_APP_NAME: '***private***'
                 ZIP_FILE: 'AuthServer.tgz'

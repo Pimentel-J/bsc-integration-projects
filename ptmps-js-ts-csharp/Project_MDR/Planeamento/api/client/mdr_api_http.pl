@@ -1,4 +1,4 @@
-% imports necessários
+% imports necessï¿½rios
 
 :- use_module(library(http/http_open)).
 :- use_module(library(http/json)).
@@ -15,7 +15,7 @@ load_data_http :-
   gera_ligacoes_http.
 
 
-% limpa a base de conhecimento no que toca aos factos que serão carregados das fontes MDR e MDV (evita duplicações)
+% limpa a base de conhecimento no que toca aos factos que serï¿½o carregados das fontes MDR e MDV (evita duplicaï¿½ï¿½es)
 
 clear_bc_http :-
     http_session_retractall(no(_,_,_,_,_,_)),
@@ -24,22 +24,22 @@ clear_bc_http :-
     http_session_retractall(liga(_,_,_)).
 
 
-% carregar dados dos nós da rede
+% carregar dados dos nï¿½s da rede
 
 get_nos_http :-
-  http_open('https://lapr5-20s5-3na-2-mdr.herokuapp.com/api/nos', Reply, [request_header('Accept'='application/json')]),
+  http_open('https://***private***.herokuapp.com/api/nos', Reply, [request_header('Accept'='application/json')]),
   json_read_dict(Reply, Dict),
   close(Reply),
   assert_nos_http(Dict, _NLinhas).
 
-  % percorre cada nó da lista e faz assert do mesmo
+  % percorre cada nï¿½ da lista e faz assert do mesmo
 assert_nos_http([],0).
 assert_nos_http([H|L],N) :-
     assert_no_http(H),
     assert_nos_http(L,N2),
     N is N2+1.
   
-  % assert de um nó
+  % assert de um nï¿½
 assert_no_http(No) :-
     %format('No: abrev="~w", nome="~w" ~n', [No.abreviatura, No.nome] ),
     http_session_assert(no(No.nome,No.abreviatura,No.pontoRendicao,No.estacaoRecolha,No.longitude,No.latitude)).
@@ -49,7 +49,7 @@ assert_no_http(No) :-
 % carregar dados das linhas
 
 get_linhas_http :-
-  http_open('https://lapr5-20s5-3na-2-mdr.herokuapp.com/api/percursos', Reply, [request_header('Accept'='application/json')]),
+  http_open('https://***private***.herokuapp.com/api/percursos', Reply, [request_header('Accept'='application/json')]),
   json_read_dict(Reply, Dict),
   close(Reply),
   assert_linhas_http(Dict, _NLinhas).
@@ -57,7 +57,7 @@ get_linhas_http :-
   % percorre cada linha da lista e faz assert da mesma
 assert_linhas_http([],0).
 assert_linhas_http([H|L],N) :-
-    (atom(H.idLinha);assert_linha_http(H)), % só faz assert se o idLinha não for nulo
+    (atom(H.idLinha);assert_linha_http(H)), % sï¿½ faz assert se o idLinha nï¿½o for nulo
     assert_linhas_http(L,N2),
     N is N2+1.
 

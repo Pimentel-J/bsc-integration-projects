@@ -31,7 +31,7 @@ describe('Tipo Tripulante e2e Tests', () => {
   it('should add Tipo de Tripulante', () => {
     cy.visit('/tipoTripulante');
 
-    // cy.intercept('https://lapr5-20s5-3na-2-mdr.herokuapp.com/api/tiposTripulante').as('post');
+    // cy.intercept('https://***private***.herokuapp.com/api/tiposTripulante').as('post');
 
     cy.get('#input-codigo').type('e2e');
     cy.get('#input-descricao').type('teste');

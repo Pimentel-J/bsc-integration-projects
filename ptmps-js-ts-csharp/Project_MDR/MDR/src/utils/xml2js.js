@@ -24,7 +24,7 @@ function importXml(filename, callback) {
 
 // PARA TESTAR COM > node ./src/utils/xml2js
 /*
-const filename = 'demo-lapr5.glx';
+const filename = 'demo-***private***.glx';
 const TipoTripulanteMapper = require('../mappers/tipoTripulanteMapper');
 
 importXml(filename, (resultado) => {

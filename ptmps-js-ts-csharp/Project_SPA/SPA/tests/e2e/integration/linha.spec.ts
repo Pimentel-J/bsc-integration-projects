@@ -25,7 +25,7 @@ describe('Linha e2e Tests', () => {
   it('should add Linha', () => {
     cy.visit('/linha');
 
-    cy.intercept('POST', 'https://lapr5-20s5-3na-2-mdr.herokuapp.com/api/linha').as('post');
+    cy.intercept('POST', 'https://***private***.herokuapp.com/api/linha').as('post');
 
     cy.get(':nth-child(2) > label').type('ze2e');
     cy.get('button').contains('Criar linha').click().then(() => {
