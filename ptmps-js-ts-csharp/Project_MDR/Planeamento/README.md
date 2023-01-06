@@ -1,4 +1,4 @@
-# Integration Project ISEP-LEI - 5º Semester
+# Integration Project ISEP-LEI - 5th Semester
 
 ## **Planning Module (SWI-Prolog)**
 
