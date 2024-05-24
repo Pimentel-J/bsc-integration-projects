@@ -44,13 +44,9 @@ A system to manage different transportation networks (lines, trips, etc.). As we
 ## 1.1. Project's Modules
 
 * [Network Master Data (*MDR*)](./Project_MDR/)
-    * [Readme](./Project_MDR/README.md)
-* [Planning (*Planeamento*)](./Project_MDR/Planeamento/)
-    * [Readme](./Project_MDR/Planeamento/README.md)    
+* [Planning (*Planeamento*)](./Project_MDR/Planeamento/) 
 * [Single Page Application (*SPA*)](./Project_SPA/)
-    * [Readme](./Project_SPA/README.md)
 * [Rides Master Data (*MDV*)](./Project_MDV/)
-    * [Readme](./Project_MDV/README.md)    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
