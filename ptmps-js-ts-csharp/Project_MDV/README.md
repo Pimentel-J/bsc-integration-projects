@@ -14,15 +14,15 @@
 
 * [SPA](../Project_SPA/)
 
-### Constituição do Grupo de Trabalho - 20S5_3NA_2
+### Constituição do Grupo de Trabalho
 
-| Nome do Aluno		|
-|-------------------|
-| Bruno Calisto     |
-| João Pimentel     |
-| Pedro Magalhães   |
-| Samuel Esperança  |
-| Vítor Oliveira    |
+| |
+|-----------|
+| Calisto   |
+| Esperança |
+| Magalhães |
+| Oliveira  |
+| Pimentel  |
 
 -------------------------
 
